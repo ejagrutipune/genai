@@ -75,6 +75,21 @@ body {
 
 .header-link span { color: var(--yellow); margin-left: 8px; }
 
+.welcome-page {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.welcome-logo { width: 140px; }
+.welcome-page h1 { margin-bottom: 0; }
+.welcome-page p { color: var(--muted); margin-bottom: 24px; }
+#logout-link { margin-left: 16px; flex-shrink: 0; }
+
 .ejmenu {
   display: flex;
   align-items: center;

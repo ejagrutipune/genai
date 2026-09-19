@@ -1,3 +1,8 @@
+document.querySelector('#logout-link').addEventListener('click', () => {
+  sessionStorage.removeItem('userEmail');
+  sessionStorage.removeItem('userName');
+});
+
 const homeButton = document.querySelector('#home-button');
 const careerButton = document.querySelector('#career-roadmap-button');
 const aiButton = document.querySelector('#ai-button');
