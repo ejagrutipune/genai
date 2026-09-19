@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>eJagruti | Welcome</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="js/auth.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
   <main class="welcome-page">
@@ -13,7 +16,15 @@
     </span>
     <h1>Welcome to eJagruti</h1>
     <p>Awaken ideas. Build intelligence.</p>
-    <a class="header-link" href="homepage.html">Continue to the eJagruti homepage</a>
+    <p>Sign in with your approved Gmail account to continue.</p>
+    <div id="g_id_onload"
+         data-client_id="55241675267-vh1gcsn07uq3cbeir7vj57l58h0h2c0d.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false"
+         data-auto_select="false"></div>
+    <div class="g_id_signin" data-type="standard" data-size="large"></div>
+    <p id="login-status" role="status" aria-live="polite"></p>
+    <noscript><p>Enable JavaScript to sign in with Google.</p></noscript>
   </main>
 </body>
 </html>
