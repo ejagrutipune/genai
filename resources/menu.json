@@ -1,0 +1,558 @@
+{
+    "AI": [
+        "1_AI_Ecosystems.png",
+        "2_AIvsMLvsDL.gif",
+        "3-Sample_Vs_Population_DF.jpg",
+        "4-Types_Of_Data.jpg"
+    ],
+    "Calculas": [
+        "ChainRules_Derivative.jpg",
+        "Derivative.png",
+        "Slope_Of_A_Line.png",
+        "Types_Of_Data.jpg"
+    ],
+    "Career Roadmp": [
+        "1_Different_Tracks.png",
+        "2_DataTrack.png",
+        "3_MLTrack.png",
+        "4_GenAITrack.png",
+        "5_PlatformAndInfrastructure_Track.png"
+    ],
+    "Deep Learning": {
+        "ANN": {
+            "1 Prerequisite": [
+                "Embedding1.png",
+                "Understand_Chain_Rule.jpg"
+            ],
+            "2 Understand": [
+                "1_ANN.jpg",
+                "2_ANN_Regressor.jpg",
+                "3_ANN_Regressor.jpg"
+            ]
+        },
+        "CNN": {
+            "1 Prerequisite": [
+                "10_DenseLayer.png",
+                "11_Cross_Entropy.png",
+                "1_Neuron.png",
+                "2.0_How_Convolution_Works.jpg",
+                "2.1_How_Convolution_Works.jpg",
+                "3_ReLU.png",
+                "4_Logit.png",
+                "5_Sigmoid.png",
+                "6_CNN_WorkFlow.jpg",
+                "7_Tanh.png",
+                "8_Forward_Backword_Propogation.png",
+                "9_SoftMax.png"
+            ],
+            "2 Understand": [
+                "1_CNN_Architecture.png",
+                "2_CNN_WorkFlow.png",
+                "3_Convolution_Example.png",
+                "4_complete_convolution_calculations.xlsx",
+                "5_CNN_Basics.ejagruti"
+            ],
+            "4 UNet Architecture": [
+                "10_Step15_Step16.jpg",
+                "11_Step17_Step18.jpg",
+                "12_Step19_Step20.jpg",
+                "13_Step21_Step22.jpg",
+                "14_Step23_Step24.jpg",
+                "1_What_is_UNet_Architecture.jpg",
+                "2_ProblemStatement.png",
+                "3_Step1_Step2.jpg",
+                "4_Step3_Step4.jpg",
+                "5_Step5_Step6.jpg",
+                "6_Step7_Step8.jpg",
+                "7_Step9_Step10.jpg",
+                "8_Step11_Step12.jpg",
+                "9_Step13_Step14.jpg"
+            ]
+        },
+        "RNN": {
+            "1 Prerequisite": [
+                "ChainRule.jpg",
+                "SingleCellRNN.jpg",
+                "What_IS_RNN.png"
+            ],
+            "2 Understand": {
+                "Many2One": {
+                    "CaseStudy1": [
+                        "10_Reduce_SSE_Using_BPTT.png",
+                        "11_After_Many_Iterations.jpg",
+                        "12_Check_Model_On_ValidationData.png",
+                        "13_Final_Evaluations.png",
+                        "14_Final_RNN_Architecture.png",
+                        "1_ProblemStatement.png",
+                        "2_Data_Normalization.png",
+                        "3_Understand_Our_Goal.png",
+                        "4_RNN_Overview.png",
+                        "5_General_RNN_Architecture.png",
+                        "6_Unfold_Hidden_Layer.png",
+                        "7_Identify_Weight_And_Baises.png",
+                        "8_How_Each_Unfold_Layer_Computes_Value.png",
+                        "9_Identify_Diff_Between_TargetVsPredicted_Value.png"
+                    ]
+                },
+                "One2Many": {
+                    "CaseStudy1": [
+                        "10_Predict_First_Output_Word.png",
+                        "11_Feed_Predicted_Word_Back2RNN.png",
+                        "12_Cal_HiddenLayer1_ForWord_IS.png",
+                        "13_Calculate_Hidden_Layer2_Again_For_Is.png",
+                        "14_Predict_Second_Output_Word.png",
+                        "15_Feed_Approved_Back2RNN.png",
+                        "16_Calculate_HiddenLayer1&2_For_Approved.png",
+                        "17_Predict_Third_Output_Word_RNN.png",
+                        "18_Cal_HiddenLayer1&2_For_After.png",
+                        "19_Predict_Final_Output_Word.png",
+                        "1_RNN_ProblemStatement.png",
+                        "20_Calculate_Cross_Entropy_Loss.png",
+                        "21_Update_Weights_Bais.png",
+                        "22_Update_HiddenLayer2.png",
+                        "23_FinalSummary.png",
+                        "2_Given_Sample_Data.png",
+                        "3_RNN_Architecture.png",
+                        "4_Create_Vocabulary_&_Word_Index.png",
+                        "5_Create_Embedding_Vectors.png",
+                        "6_Decide_RNN_Model.png",
+                        "7_Initialize_Weight_&_Bias_HiddenLayer1.png",
+                        "8_Calculate_HiddenLayer1_Output.png",
+                        "9_Calculate_HiddenLayer2_Output.png"
+                    ]
+                }
+            },
+            "3 ProvideSolutions": [
+                "1_RNN_Tasks.jpg"
+            ],
+            "4 LSTM": {
+                "1 Prerequisite": [
+                    "1_Vanishing_Gradient_Problem.jpg",
+                    "2_About_LSTM.jpg",
+                    "3_Forget_Gate_In_LSTM.jpg",
+                    "4_Output_Gate_In_LSTM.jpg"
+                ],
+                "2 Understand": [
+                    "1_Understand_LSTM_Cell_In_RNN.png",
+                    "2_LSTM_With_2Hidden_Layers_With_SingleNeuron.png",
+                    "3_LSTM_With_2HiddenLayers_With_MultiNeurons.png",
+                    "4_How_Calculate_Weight_And_Bias.png",
+                    "5_Understand_Forget_Gate.png",
+                    "6_Understand_Input_Gate.png",
+                    "7_Understand_Candidate_Value.png",
+                    "8_Understand_Output_Gate.png",
+                    "9_Complete_LSTM_Flow.png"
+                ]
+            }
+        }
+    },
+    "Linear Algebra": [
+        "Derivative&ChainRules.ejagruti",
+        "MatrixDotProducts.jpg"
+    ],
+    "Machine Learning": {
+        "1 Types Of Machine Learning": [
+            "What_Is_Rienforcement_Learning.jpg",
+            "What_Is_Supervised_Learning.jpg",
+            "What_Is_Unsupervised_Learning.jpg"
+        ],
+        "2 Supervised Learning": {
+            "1 Simple Linear Regression": {
+                "1 Prerequisite": [
+                    "3-Mean_Median_Mode.png",
+                    "4-Standard_Deviation.png",
+                    "5-Slope_Of_A_Line.png",
+                    "6-Pearson_Correlation_Coefficient.jpg",
+                    "7-Coefficient_Of_Determination.jpg"
+                ],
+                "2 Understanding": [
+                    "1-Simple_Linear_Regression.jpg",
+                    "2-SimpleLinearRegression.ejagruti",
+                    "3-SimpleLinearRegression.ejagruti"
+                ],
+                "3 ProvideSolutions": [
+                    "Simple_Linear_Regression_Task.jpg"
+                ]
+            },
+            "2 MultiLinear Regression": {
+                "1 Prerequisite": [
+                    "1-Covariance.jpg",
+                    "2-MultiCollinearity.jpg",
+                    "3-Derivative.png",
+                    "4-GradientDescent.jpg",
+                    "5a-Coefficient_Of_Determination.jpg",
+                    "5b-Covariance.jpg",
+                    "6-ANOVA.jpg",
+                    "7-Matrices_Part2.jpg",
+                    "8-Matrices_Part1.png",
+                    "HowGradientDescentWorks.xlsx"
+                ],
+                "2 Understanding": [
+                    "MultipleLinearRegression-CaseStudy3.ejagruti",
+                    "MultipleLinearRegression1-CaseStudy4.ejagruti",
+                    "Multiple_Linear_Regression-CaseStudy1.jpg",
+                    "Multiple_Linear_Regression-CaseStudy2.jpg"
+                ],
+                "3 ProvideSolutions": [
+                    "Multiple_Linear_Regression_Task.jpg"
+                ]
+            },
+            "3 Polynomial Regression": {
+                "1 Prerequisite": [
+                    "Dimensions-1.png",
+                    "Dimensions-2.png"
+                ],
+                "2 Understanding": [
+                    "Polynomial_Regression.jpg"
+                ],
+                "3 ProvideSolutions": [
+                    "Polynomial_Regression_Task.jpg"
+                ]
+            },
+            "4 K Nearest Neighbour": {
+                "1 Prerequisite": [
+                    "EuclideanDistance.jpg"
+                ],
+                "2 Understanding": [
+                    "1-KNN-Classification-Part1.png",
+                    "1.1-CorrectValueOf-K-In-KNN.png",
+                    "2-KNN-Classification-Part2.png",
+                    "2.1-CorrectValueOf-K-In-KNN.png",
+                    "KNN-Regression-Part1.jpg",
+                    "KNN-Regression-Part2.jpg"
+                ],
+                "3 ProvideSolutions": [
+                    "KNN-Task1.jpg",
+                    "KNN-Task2.jpg"
+                ]
+            },
+            "5 Support Vector Machine": {
+                "1 Prerequisite": [
+                    "EuclideanDistance.jpg",
+                    "Vectors.jpg"
+                ],
+                "2 Understanding": {
+                    "1 CaseStudy1": [
+                        "1_Why_SVM.jpg",
+                        "2_Problem_Statements.jpg",
+                        "3_Identify_Support_Vectors.jpg",
+                        "4_Calculate_Weights_And_Bias.jpg",
+                        "5_Evaluate_Model_Performance.jpg",
+                        "6_HardMargin_Vs_SoftMargin.jpg"
+                    ],
+                    "2 CaseStudy2": [
+                        "1_Slope_Vs_Straight_Line.jpg",
+                        "2_Support_Vector_Direction.png",
+                        "3_DotProductOfWeights.jpg",
+                        "4_Calculate_Weights_And_Bias.png",
+                        "5_Searching_For_Closest_Vectors.png",
+                        "6_Support_Vector_Classification.png",
+                        "7_SoftMargin_Vs_HardMargin.png",
+                        "8-SVM_Classification_Using_SoftMargin.png",
+                        "9_SVM_Classification_Calculations.png"
+                    ]
+                }
+            },
+            "6 Naive Bayes": {
+                "1 Gaussian Naive Bayes": {
+                    "1 Prerequisite": [
+                        "1_Bayes_Theoram.png",
+                        "2_Gaussian_Distribution.png",
+                        "3_ProbabilityVsMaximumLikelihood-Part1.png",
+                        "4_ProbabilityVsMaximumLikelihood-Part2.png",
+                        "5_ProbabilityVsMaximumLikelihood-Part3.png"
+                    ],
+                    "2 Understanding": [
+                        "1_Gaussian_Naive_Bayes.png",
+                        "2_Gaussian_Naive_Bayes.png"
+                    ],
+                    "3 ProvideSolutions": [
+                        "GNB_Task.png"
+                    ]
+                },
+                "1 Multinomial Naive Bayes": {
+                    "1 Prerequisite": [
+                        "Theory_Multinomial_Naive_Bayes.png"
+                    ],
+                    "2 Understanding": [
+                        "1_Multinomial_Naive_Bayes.png",
+                        "2_Multinomial_Naive_Bayes.png",
+                        "3_Multinomial_Naive_Bayes.png"
+                    ],
+                    "3 ProvideSolutions": [
+                        "MNB-Task.png"
+                    ]
+                },
+                "3 Bernoulli Naive Bayes": {
+                    "1 Prerequisite": [
+                        "Bernoulli_Distribution.png"
+                    ],
+                    "2 Understanding": [
+                        "1_Bernoulli_Naive_Bayes.png",
+                        "2_Bernoulli_Naive_Bayes.png"
+                    ],
+                    "3 ProvideSolutions": [
+                        "BNB_Task.png"
+                    ]
+                }
+            },
+            "7 Logistic Regression": {
+                "1 Prerequisite": [
+                    "10_Confussion_Matrix.jpg",
+                    "1_BeforeWeStart.jpg",
+                    "2_Growth.jpg",
+                    "2_Log.jpg",
+                    "3_EulerNumber.jpg",
+                    "4_Log.png",
+                    "5_NaturalLog.jpg",
+                    "6_Odds.jpg",
+                    "7_LogOfOdds.jpg",
+                    "8_Logit.png",
+                    "9_Logistic_Regression_Sigmoid_Equation.jpg"
+                ],
+                "2 Understanding": [
+                    "1_Why_Logistic_Regression.jpg",
+                    "2_Problem_Statement.jpg",
+                    "3_Z_Score_Data_Normalization.jpg",
+                    "4_Step1_Step6.jpg",
+                    "5_Step7_Step10.jpg",
+                    "6_Step11_Step13.jpg",
+                    "7_Calculate_Gradients.jpg",
+                    "Binary_Logistic_Regression.jpg",
+                    "Multinomial_Logistic_Regression.jpg",
+                    "Ordinal_Logistic_Regression.jpg"
+                ],
+                "3 ProvideSolutions": [
+                    "1_CaseStudy.jpg",
+                    "2_CastStudy.jpg"
+                ]
+            }
+        },
+        "3 Unsupervised Learning": {
+            "1 K Mean Cluster": {
+                "1 Prerequisite": [
+                    "EuclideanDistance.jpg"
+                ],
+                "2 Understanding": [
+                    "K-Means-Clustering-Part1.png",
+                    "K-Means-Clustering-Part2.jpg",
+                    "K-Means-Clustering-Part3.jpg"
+                ],
+                "3 ProvideSolutions": [
+                    "K-Means-Cluster-Task.jpg"
+                ]
+            },
+            "2 Decision Tree": {
+                "1 Prerequisite": [
+                    "Gini_Impurity-Part1.jpg",
+                    "Gini_Impurity-Part2.jpg"
+                ],
+                "2 Understanding": [
+                    "DecisionTree-Classifier.jpg",
+                    "DecisionTree-Regressor.jpg"
+                ],
+                "3 ProvideSolutions": [
+                    "DecisionTree_Task.jpg"
+                ]
+            },
+            "3 Random Forest": {
+                "1 Prerequisite": [
+                    "1-Ensemble_Learning.jpg",
+                    "2-Bagging.jpg",
+                    "3-Boosting.jpg",
+                    "4-Stacking.jpg",
+                    "5-Feature_Importance_In_RandomForest.jpg"
+                ],
+                "2 Understanding": [
+                    "RandomForest_Classification.jpg",
+                    "RandomForest_Regression.jpg"
+                ],
+                "3 ProvideSolutions": [
+                    "Random-Forest-Task.png"
+                ]
+            },
+            "4 Hierarchical Clustering": [
+                "CaseStudy1_Hierarchical_Clustering.jpg",
+                "CaseStudy2_Hierarchical_Clustering.jpg"
+            ]
+        },
+        "4 Reinforcement Learning": [
+            "1_RL_state_actions_reward.png",
+            "2_RL_simulator_learning.png",
+            "3_RL_evaluation_safety.png",
+            "4_RL_production_reality_check.png",
+            "RL_Using_QTable.ejagruti"
+        ]
+    },
+    "NLP": {
+        "TRANSFORMER": {
+            "1 Understanding": [
+                "1_Transformer_Part1.png",
+                "2_Transformer_Part2.png",
+                "3_Transformer_Part3.png",
+                "4_Transformer_Part4.png",
+                "5_Why_Layer_Normalization.png",
+                "6_Transformer_Part5.png",
+                "7_Transformer_Part6.png"
+            ]
+        }
+    },
+    "OpenCV": {
+        "1 Understand": [
+            "1_OpenCV_Part1.png",
+            "2_OpenCV_Part2.png",
+            "3_OpenCV_Part3.png",
+            "4_OpenCV_Part4.png",
+            "ComputerVision.ipynb"
+        ]
+    },
+    "Others": [
+        "Bias_Variance_TradeOff.jpg",
+        "Core_Fundamental_Concepts.ejagruti",
+        "GradientDescent.ejagruti",
+        "HowGradientDescentWorks.xlsx",
+        "LogisticRegressionBasics_for_binary_data.xlsx",
+        "LossFunction.jpg",
+        "ReinforcementLearning.jpg",
+        "UnSupervisedLearning.jpg",
+        "What_is_Decoder.jpg",
+        "What_is_Encoder.jpg"
+    ],
+    "Sample Code": {
+        "NumPy": [
+            "3-Working_With_Arrays.png",
+            "NumPy.ejagruti"
+        ],
+        "OpenCV": [
+            "ComputerVision1.ipynb",
+            "VideoProcessing.py"
+        ],
+        "Pandas": [
+            "10_Adv_Pandas_Operations_Part1.png",
+            "11_Adv_Pandas_Operations_Part2.png",
+            "12_Time_Series_Analysis.png",
+            "1_Series.png",
+            "2_Read_DataFrame.png",
+            "3_Exploring_And_Selecting_Data.png",
+            "4_Sorting_Cleaning_Data.png",
+            "5_DataTransformation_GroupBy.png",
+            "6_Join_Merge_PivotTable.png",
+            "7_DateTime_&_String_Operations.png",
+            "8_Categorical_Data_&_WinFunctions.png",
+            "9_DataVisualization_&_PerformanceOptimization.png",
+            "Pandas.ejagruti"
+        ],
+        "Python": [
+            "1-DataTypes_Statements_Loop.png",
+            "2-StringOperations.png",
+            "3-Arrays.png",
+            "4-Dictionary.png",
+            "5_Class_Objects_Methods.png",
+            "6_Tuples_And_List.png",
+            "7_FileSystemObject_P1.png",
+            "8_FileSystemObject_P2.png",
+            "9_FileSystemObject_P3.png",
+            "Python.ejagruti"
+        ],
+        "Visualization": [
+            "MatPlotLib.jpg",
+            "Plotly.jpg",
+            "Seaborn.jpg"
+        ]
+    },
+    "Sample Data": {
+        "handwritten digits": [
+            "2_bab_20x20_grayscale.png",
+            "2_dhr_20x20_grayscale.png",
+            "2_jag_20x20_grayscale.png",
+            "2_mns_20x20_grayscale.png",
+            "2_nha_20x20_grayscale.png",
+            "2_rch_20x20_grayscale.png",
+            "2_sum_20x20_grayscale.png",
+            "4_bab_20x20_grayscale.png",
+            "4_dhr_20x20_grayscale.png",
+            "4_jag_20x20_grayscale.png",
+            "4_mns_20x20_grayscale.png",
+            "4_nha_20x20_grayscale.png",
+            "4_rch_20x20_grayscale.png",
+            "4_sum_20x20_grayscale.png"
+        ]
+    },
+    "Setup": [
+        "CodingViaJupyterNotebook.ejagruti",
+        "Python_Using_Google_Colab.ejagruti",
+        "Visual_Studio_Code.ejagruti"
+    ],
+    "Statistics": [
+        "Binomial_Distribution.png",
+        "Euclidean_Distance.jpg",
+        "HypothesisTesting.ejagruti",
+        "Logit.png",
+        "Mean_Median_Mode.png",
+        "PoissonDistribution.png",
+        "ProbabilityVsMaximumLikelihood-Part1.png",
+        "ProbabilityVsMaximumLikelihood-Part2.png",
+        "ProbabilityVsMaximumLikelihood-Part3.png",
+        "Standard_Deviation.png",
+        "Statistics.ejagruti"
+    ],
+    "temp": {
+        "1 Prerequisite": [
+            "ChainRule.jpg",
+            "What_IS_RNN.png"
+        ],
+        "2 Understand": {
+            "Many2One": [
+                "1_Many2One_RNN.png",
+                "2_Many2One_RNN.png",
+                "3_Many2One_RNN.png",
+                "4_Many2One_RNN.png",
+                "5_Many2One_RNN.png",
+                "6_Many2One_RNN.png"
+            ],
+            "One2Many": [
+                "1ToMany.png",
+                "1_One2Many_RNN_Summary.png",
+                "3_Step1_To_Step5.png",
+                "4_Step6_To_Step8.png",
+                "One_2_Many.png"
+            ]
+        },
+        "3 ProvideSolutions": [
+            "1_RNN_Tasks.jpg"
+        ],
+        "Prerequisite Part1": [
+            "Binomial_Distribution.png"
+        ],
+        "Prerequisite Part2": [
+            "Confusion_Matrix.jpg",
+            "Poisson_Distribution.png"
+        ],
+        "Prerequisite Part3": [
+            "Encoding_And_1Hot_Encoding.jpg",
+            "Log.png"
+        ],
+        "TestYourself": [
+            "Binary_Logistic_Regression_Task.jpg",
+            "Ordinal_Logistic_Regression_Task.jpg",
+            "Polynomial_Logistic_Regression_Task.jpg"
+        ],
+        "Understand": [
+            "Binary_Logistic_Regression-CaseStudy1.jpg",
+            "Choosing_Best_K_In_KNN.jpg",
+            "Multinomial_Logistic_Regression-CaseStudy1.jpg",
+            "Ordinal_Logistic_Regression-CaseStudy1.jpg"
+        ],
+        "files": [
+            "Binomial_Distribution.png",
+            "Decision_Tree_Classification.ejagruti",
+            "Decision_Tree_Regressor.ejagruti",
+            "KMeans_Clustering.ejagruti",
+            "LassoRegressionTheory.xlsx",
+            "Logistic_Regression_For_Categorical_Data.ejagruti",
+            "PolynomialRegression.ejagruti",
+            "RidgeRegression.ejagruti",
+            "RidgeRegressionTheory.xlsx"
+        ]
+    }
+}
