@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>eJagruti | Path to GenAI Development</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="ejtop">
+      <div class="brand">
+        <span class="logo-frame">
+          <img src="images/shree_yantra.jpg" alt="Shree Yantra">
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">e<span>J</span>agruti</span>
+          <span class="brand-tagline">Awaken ideas. Build intelligence.</span>
+        </span>
+      </div>
+    </header>
+    <nav class="ejmenu" aria-label="Main navigation">
+      <button class="menu-button active" id="home-button" type="button">Home</button>
+      <button class="menu-button" id="career-roadmap-button" type="button" aria-expanded="false" aria-controls="career-actions">Career Roadmap</button>
+      <button class="menu-button" id="ai-button" type="button" aria-expanded="false" aria-controls="ai-actions">AI</button>
+      <button class="menu-button" id="machine-learning-button" type="button" aria-expanded="false" aria-controls="machine-learning-tiles">Machine Learning</button>
+      <button class="menu-button" type="button" data-empty-menu>Deep Learning</button>
+      <button class="menu-button" id="statistics-button" type="button" aria-expanded="false" aria-controls="statistics-viewer">Statistics</button>
+      <button class="menu-button" type="button" data-empty-menu>Calculas</button>
+      <button class="menu-button" type="button" data-empty-menu>Linear Algebra</button>
+      <button class="menu-button" type="button" data-empty-menu>Setup</button>
+    </nav>
+    <main class="ejcanvas">
+      <section class="track-actions" id="career-actions" aria-label="Career roadmap tracks" hidden>
+        <button type="button" data-track-image="images/tracks/2_DataTrack.png" data-track-alt="Data Track roadmap">Data Track</button>
+        <button type="button" data-track-image="images/tracks/3_MLTrack.png" data-track-alt="Machine Learning Track roadmap">Machine Learning Track</button>
+        <button type="button" data-track-image="images/tracks/4_GenAITrack.png" data-track-alt="GenAI Track roadmap">GenAI Track</button>
+        <button type="button" data-track-image="images/tracks/5_PlatformAndInfrastructure_Track.png" data-track-alt="Performance and Infrastructure Track roadmap">Performance &amp; Infrastructure Track</button>
+        <img class="track-overview" id="career-roadmap-image" src="images/tracks/1_Different_Tracks.png" alt="AI career roadmap showing different tracks, roles and career progression" hidden>
+      </section>
+      <section class="prerequisite-viewer" id="slr-prerequisite-viewer" aria-label="Simple Linear Regression prerequisites" hidden>
+        <header class="viewer-heading">
+          <div><p>Simple Linear Regression</p><h2>Prerequisites</h2></div>
+          <button type="button" id="back-to-algorithms">Back to Algorithms</button>
+        </header>
+        <nav class="lesson-nav" aria-label="Prerequisite topics">
+          <button class="active" type="button" data-lesson-image="images/SupervisedML/SLR/Prerequisite/1-Sample_Vs_Population_DF.jpg"><span>01</span>Sample vs Population</button>
+          <button type="button" data-lesson-image="images/SupervisedML/SLR/Prerequisite/2-Types_Of_Data.jpg"><span>02</span>Types of Data</button>
+          <button type="button" data-lesson-image="images/SupervisedML/SLR/Prerequisite/3-Mean_Median_Mode.png"><span>03</span>Mean, Median &amp; Mode</button>
+          <button type="button" data-lesson-image="images/SupervisedML/SLR/Prerequisite/4-Standard_Deviation.png"><span>04</span>Standard Deviation</button>
+          <button type="button" data-lesson-image="images/SupervisedML/SLR/Prerequisite/5-Slope_Of_A_Line.png"><span>05</span>Slope of a Line</button>
+          <button type="button" data-lesson-image="images/SupervisedML/SLR/Prerequisite/6-Pearson_Correlation_Coefficient.jpg"><span>06</span>Pearson Correlation</button>
+          <button type="button" data-lesson-image="images/SupervisedML/SLR/Prerequisite/7-Coefficient_Of_Determination.jpg"><span>07</span>Coefficient of Determination</button>
+          <button type="button" data-lesson-image="images/SupervisedML/SLR/Prerequisite/8-Inner_Quartile_Range.png"><span>08</span>Interquartile Range</button>
+          <button type="button" data-lesson-image="images/SupervisedML/SLR/Prerequisite/9-Held-Out-Error.png"><span>09</span>Held-Out Error</button>
+        </nav>
+        <div class="lesson-stage">
+          <img id="lesson-image" src="images/SupervisedML/SLR/Prerequisite/1-Sample_Vs_Population_DF.jpg" alt="Sample versus Population prerequisite lesson">
+        </div>
+        <footer class="lesson-controls"><button type="button" id="previous-lesson">Previous</button><span id="lesson-progress">1 of 9</span><button type="button" id="next-lesson">Next</button></footer>
+      </section>
+      <section class="track-actions" id="ai-actions" aria-label="AI topics" hidden>
+        <button type="button" data-content-image="images/AI/2_AIvsMLvsDL.gif" data-content-alt="Comparison of AI, machine learning and deep learning">AI vs ML vs DL</button>
+        <button type="button" data-content-image="images/AI/3-Sample_Vs_Population_DF.jpg" data-content-alt="Sample versus population">Sample vs Population</button>
+        <button type="button" data-content-image="images/AI/4-Types_Of_Data.jpg" data-content-alt="Types of data">Types of Data</button>
+        <img class="track-overview" id="ai-content-image" src="images/AI/1_AI_Ecosystems.png" alt="Artificial Intelligence ecosystem overview" hidden>
+      </section>
+      <section class="learning-tiles" id="machine-learning-tiles" aria-label="Machine Learning categories" hidden>
+        <div class="learning-column">
+          <article class="learning-card supervised-card">
+            <span class="card-number">01</span><span class="card-icon" aria-hidden="true">S</span>
+            <strong>Supervised<br>Machine Learning</strong><small>Learn from labelled data</small>
+            <div class="card-links"><a href="images/MachineLearning/What_Is_Supervised_Learning.jpg" data-about-image>About</a><a href="#supervised-algorithms" id="supervised-algorithms-link">Explore Algorithms</a></div>
+          </article>
+        </div>
+        <div class="learning-column">
+          <article class="learning-card unsupervised-card">
+            <span class="card-number">02</span><span class="card-icon" aria-hidden="true">U</span>
+            <strong>Unsupervised<br>Machine Learning</strong><small>Discover hidden patterns</small>
+            <div class="card-links"><a href="images/MachineLearning/What_Is_Unsupervised_Learning.jpg" data-about-image>About</a><a href="#unsupervised-algorithms" id="unsupervised-algorithms-link">Explore Algorithms</a></div>
+          </article>
+        </div>
+        <div class="learning-column">
+          <article class="learning-card reinforcement-card">
+            <span class="card-number">03</span><span class="card-icon" aria-hidden="true">R</span>
+            <strong>Reinforcement<br>Machine Learning</strong><small>Learn through rewards</small>
+            <div class="card-links"><a href="images/MachineLearning/What_Is_Rienforcement_Learning.jpg" data-about-image>About</a><a href="#">Explore Algorithms</a></div>
+          </article>
+        </div>
+      </section>
+      <section class="algorithm-grid" id="supervised-algorithms" aria-label="Supervised Machine Learning algorithms" hidden>
+        <article class="algorithm-card slr-card"><span>01</span><img class="algorithm-thumbnail" src="images/SupervisedML/SLR/slr-card-thumbnail.png" alt="Simple Linear Regression best-fit line with data points and residuals"><h3>Simple Linear Regression</h3><div class="algorithm-actions"><button type="button" id="slr-prerequisite-button">Prerequisite</button><button type="button" id="slr-core-concepts-button">Core Concepts</button><button type="button" id="slr-case-studies-button">Solved Case Studies</button><button type="button">Problem Statement</button></div></article>
+        <article class="algorithm-card slr-card"><span>02</span><img class="algorithm-thumbnail" src="images/SupervisedML/MLR/mlr-card-thumbnail.png" alt="Multiple Linear Regression inputs converging on a prediction plane"><h3>Multi Linear Regression</h3><div class="algorithm-actions"><button type="button" id="mlr-prerequisite-button">Prerequisite</button><button type="button" id="mlr-core-button">Core Concepts</button><button type="button" id="mlr-case-study-button">Solved Case Studies</button><button type="button">Problem Statement</button></div></article>
+        <article class="algorithm-card"><span>03</span><h3>Logistic Regression</h3><div class="algorithm-actions"><button type="button">Prerequisite</button><button type="button">Core Concepts</button><button type="button">Solved Case Studies</button><button type="button">Problem Statement</button></div></article>
+        <article class="algorithm-card"><span>05</span><h3>TBD2</h3><div class="algorithm-actions"><button type="button">Prerequisite</button><button type="button">Core Concepts</button><button type="button">Solved Case Studies</button><button type="button">Problem Statement</button></div></article>
+        <article class="algorithm-card"><span>06</span><h3>TBD3</h3><div class="algorithm-actions"><button type="button">Prerequisite</button><button type="button">Core Concepts</button><button type="button">Solved Case Studies</button><button type="button">Problem Statement</button></div></article>
+      </section>
+      <section class="algorithm-grid" id="unsupervised-algorithms" aria-label="Unsupervised Machine Learning algorithms" hidden>
+        <article class="algorithm-card slr-card"><span>01</span><img class="algorithm-thumbnail" src="images/UnsupervisedMD/1_K_Mean_Cluster/kmeans-card-thumbnail.png" alt="Four K-Means clusters with centroids and nearest-center connections"><h3>K Mean Clusters</h3><div class="algorithm-actions"><button type="button" id="kmeans-prerequisite-button">Prerequisite</button><button type="button" id="kmeans-core-button">Core Concepts</button><button type="button" id="kmeans-understanding-button">Solved Case Studies</button><button type="button" id="kmeans-problems-button">Problem Statement</button></div></article>
+      </section>
+      <section class="prerequisite-viewer" id="statistics-viewer" aria-label="Statistics lessons" hidden>
+        <header class="viewer-heading"><div><p>Learning Path</p><h2>Statistics</h2></div></header>
+        <nav class="lesson-nav statistics-nav" aria-label="Statistics topics">
+          <button class="active" type="button" data-stat-image="images/statistics/1-Sample_Vs_Population_DF.jpg"><span>01</span>Sample vs Population</button>
+          <button type="button" data-stat-image="images/statistics/2-Types_Of_Data.jpg"><span>02</span>Types of Data</button>
+          <button type="button" data-stat-image="images/statistics/3-Mean_Median_Mode.png"><span>03</span>Mean, Median &amp; Mode</button>
+          <button type="button" data-stat-image="images/statistics/4-Standard_Deviation.png"><span>04</span>Standard Deviation</button>
+          <button type="button" data-stat-image="images/statistics/Binomial_Distribution.png"><span>05</span>Binomial Distribution</button>
+          <button type="button" data-stat-image="images/statistics/PoissonDistribution.png"><span>06</span>Poisson Distribution</button>
+          <button type="button" data-stat-image="images/statistics/ProbabilityVsMaximumLikelihood-Part1.png"><span>07</span>Probability vs Likelihood I</button>
+          <button type="button" data-stat-image="images/statistics/ProbabilityVsMaximumLikelihood-Part2.png"><span>08</span>Probability vs Likelihood II</button>
+          <button type="button" data-stat-image="images/statistics/ProbabilityVsMaximumLikelihood-Part3.png"><span>09</span>Probability vs Likelihood III</button>
+        </nav>
+        <div class="lesson-stage"><img id="statistics-image" src="images/statistics/1-Sample_Vs_Population_DF.jpg" alt="Sample versus Population statistics lesson"></div>
+        <footer class="lesson-controls"><button type="button" id="previous-statistics">Previous</button><span id="statistics-progress">1 of 9</span><button type="button" id="next-statistics">Next</button></footer>
+      </section>
+      <section class="prerequisite-viewer" id="slr-core-viewer" aria-label="Simple Linear Regression core concepts" hidden>
+        <header class="viewer-heading">
+          <div><p>Simple Linear Regression</p><h2>Core Concepts</h2></div>
+          <button type="button" id="back-from-core">Back to Algorithms</button>
+        </header>
+        <nav class="lesson-nav core-nav" aria-label="Core concept topics">
+          <button class="active" type="button" data-core-image="images/SupervisedML/SLR/Understanding/Concept/image.png"><span>01</span>Introduction</button>
+          <button type="button" data-core-image="images/SupervisedML/SLR/Understanding/Concept/SLR.png"><span>02</span>SLR Concept</button>
+        </nav>
+        <div class="lesson-stage"><img id="core-concept-image" src="images/SupervisedML/SLR/Understanding/Concept/image.png" alt="Simple Linear Regression introduction"></div>
+        <footer class="lesson-controls"><button type="button" id="previous-core">Previous</button><span id="core-progress">1 of 2</span><button type="button" id="next-core">Next</button></footer>
+      </section>
+      <section class="prerequisite-viewer" id="slr-case-studies-viewer" aria-label="Simple Linear Regression solved case studies" hidden>
+        <header class="viewer-heading"><div><p>Simple Linear Regression</p><h2>Solved Case Studies</h2></div><button type="button" id="back-from-case-studies">Back to Algorithms</button></header>
+        <nav class="case-study-selector" aria-label="Choose a case study"><button class="active" type="button" data-case-group="Case-Study-1">Case Study 1</button><button type="button" data-case-group="Case-Study-2">Case Study 2</button></nav>
+        <nav class="lesson-nav case-study-nav" aria-label="Solved case study lessons">
+          <button class="active" type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/01_problem_and_raw_data.png"><span>CS1 · 01</span>Problem &amp; Raw Data</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/02_cleaning_and_outliers.png"><span>CS1 · 02</span>Cleaning &amp; Outliers</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/03_understanding_the_line.png"><span>CS1 · 03</span>Understanding the Line</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/04_means_and_deviations.png"><span>CS1 · 04</span>Means &amp; Deviations</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/05_slope_and_intercept.png"><span>CS1 · 05</span>Slope &amp; Intercept</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/06_least_squares_derivation.png"><span>CS1 · 06</span>Least Squares</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/07_predictions_and_errors.png"><span>CS1 · 07</span>Predictions &amp; Errors</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/08_errors_and_new_prediction.png"><span>CS1 · 08</span>New Prediction</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/09_metrics_and_limits.png"><span>CS1 · 09</span>Metrics &amp; Limits</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/10_python_load_clean.png"><span>CS1 · 10</span>Python: Load &amp; Clean</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/11_python_fit_visualize.png"><span>CS1 · 11</span>Python: Fit &amp; Visualize</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-1/12_python_holdout.png"><span>CS1 · 12</span>Python: Holdout</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-2/1_SLR.png"><span>CS2 · 01</span>SLR Step 1</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-2/2_SLR.png"><span>CS2 · 02</span>SLR Step 2</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-2/3_SLR.png"><span>CS2 · 03</span>SLR Step 3</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-2/4_SLR.png"><span>CS2 · 04</span>SLR Step 4</button>
+          <button type="button" data-case-image="images/SupervisedML/SLR/Understanding/Case-Study-2/5_SLR.png"><span>CS2 · 05</span>SLR Step 5</button>
+        </nav>
+        <div class="lesson-stage"><img id="case-study-image" src="images/SupervisedML/SLR/Understanding/Case-Study-1/01_problem_and_raw_data.png" alt="Case Study 1 problem and raw data"></div>
+        <footer class="lesson-controls"><button type="button" id="previous-case-study">Previous</button><span id="case-study-progress">1 of 12</span><button type="button" id="next-case-study">Next</button></footer>
+        <div class="learning-resources" id="case-study-1-downloads"><strong>Case Study 1 Downloads</strong><a href="images/SupervisedML/SLR/Understanding/Case-Study-1/deliveries_raw.csv" download>Raw CSV</a><a href="images/SupervisedML/SLR/Understanding/Case-Study-1/deliveries_clean.csv" download>Clean CSV</a><a href="images/SupervisedML/SLR/Understanding/Case-Study-1/solved_slr.ipynb" download>Solved Notebook</a></div>
+        <div class="learning-resources" id="case-study-2-downloads" hidden><strong>Case Study 2 Downloads</strong><a href="images/SupervisedML/SLR/Understanding/Case-Study-2/eJagruti_House_Price_Raw_Data.csv" download>House Price Raw Data</a><a href="images/SupervisedML/SLR/Understanding/Case-Study-2/eJagruti_House_Price_Simple_Linear_Regression.ipynb" download>Solved SLR Notebook</a></div>
+      </section>
+      <section class="prerequisite-viewer" id="mlr-prerequisite-viewer" aria-label="Multiple Linear Regression prerequisites" hidden>
+        <header class="viewer-heading"><div><p>Multiple Linear Regression</p><h2>Prerequisites</h2></div><button type="button" id="back-from-mlr-prerequisite">Back to Algorithms</button></header>
+        <nav class="lesson-nav mlr-prerequisite-nav" aria-label="MLR prerequisite topics">
+          <button class="active" type="button" data-mlr-prerequisite-image="images/SupervisedML/MLR/Prerequisite/1-Covariance.jpg"><span>01</span>Covariance</button><button type="button" data-mlr-prerequisite-image="images/SupervisedML/MLR/Prerequisite/2-MultiCollinearity.jpg"><span>02</span>Multicollinearity</button><button type="button" data-mlr-prerequisite-image="images/SupervisedML/MLR/Prerequisite/3-Derivative.png"><span>03</span>Derivative</button><button type="button" data-mlr-prerequisite-image="images/SupervisedML/MLR/Prerequisite/4-GradientDescent.jpg"><span>04</span>Gradient Descent</button><button type="button" data-mlr-prerequisite-image="images/SupervisedML/MLR/Prerequisite/5a-Coefficient_Of_Determination.jpg"><span>05</span>Coefficient of Determination</button><button type="button" data-mlr-prerequisite-image="images/SupervisedML/MLR/Prerequisite/5b-Covariance.jpg"><span>06</span>Covariance Example</button><button type="button" data-mlr-prerequisite-image="images/SupervisedML/MLR/Prerequisite/6-ANOVA.jpg"><span>07</span>ANOVA</button><button type="button" data-mlr-prerequisite-image="images/SupervisedML/MLR/Prerequisite/7-Matrices_Part2.jpg"><span>08</span>Matrices II</button><button type="button" data-mlr-prerequisite-image="images/SupervisedML/MLR/Prerequisite/8-Matrices_Part1.png"><span>09</span>Matrices I</button>
+        </nav>
+        <div class="lesson-stage"><img id="mlr-prerequisite-image" src="images/SupervisedML/MLR/Prerequisite/1-Covariance.jpg" alt="Covariance prerequisite"></div><footer class="lesson-controls"><button type="button" id="previous-mlr-prerequisite">Previous</button><span id="mlr-prerequisite-progress">1 of 9</span><button type="button" id="next-mlr-prerequisite">Next</button></footer>
+        <div class="learning-resources"><strong>Practice Resource</strong><a href="images/SupervisedML/MLR/Prerequisite/HowGradientDescentWorks.xlsx" download>Gradient Descent Workbook</a></div>
+      </section>
+      <section class="prerequisite-viewer" id="mlr-core-viewer" aria-label="Multiple Linear Regression core concept" hidden><header class="viewer-heading"><div><p>Multiple Linear Regression</p><h2>Core Concept</h2></div><button type="button" id="back-from-mlr-core">Back to Algorithms</button></header><div class="lesson-stage"><img src="images/SupervisedML/MLR/Concept/MLR_Concept.png" alt="Multiple Linear Regression core concept"></div></section>
+      <section class="prerequisite-viewer" id="mlr-case-study-viewer" aria-label="Multiple Linear Regression case studies" hidden>
+        <header class="viewer-heading"><div><p>Multiple Linear Regression</p><h2>Solved Case Studies</h2></div><button type="button" id="back-from-mlr-case-study">Back to Algorithms</button></header>
+        <nav class="case-study-selector" aria-label="Choose an MLR case study"><button class="active" type="button" data-mlr-case-group="Case-Study-1">Case Study 1</button><button type="button" data-mlr-case-group="Case-Study-2">Case Study 2</button><button type="button" data-mlr-case-group="Case-Study-3">Case Study 3</button></nav>
+        <nav class="lesson-nav mlr-case-nav" aria-label="MLR case study lessons">
+          <button class="active" type="button" data-mlr-case-image="images/SupervisedML/MLR/Understanding/Case-Study-1/Multiple_Linear_Regression-CaseStudy1.jpg"><span>CS1</span>Case Study 1</button><button type="button" data-mlr-case-image="images/SupervisedML/MLR/Understanding/Case-Study-2/Multiple_Linear_Regression-CaseStudy2.jpg"><span>CS2</span>Case Study 2</button><button type="button" data-mlr-case-image="images/SupervisedML/MLR/Understanding/Case-Study-3/01-business-and-data.png"><span>CS3 · 01</span>Business &amp; Data</button><button type="button" data-mlr-case-image="images/SupervisedML/MLR/Understanding/Case-Study-3/02-standardization.png"><span>CS3 · 02</span>Standardization</button><button type="button" data-mlr-case-image="images/SupervisedML/MLR/Understanding/Case-Study-3/03-predictions-and-cost.png"><span>CS3 · 03</span>Predictions &amp; Cost</button><button type="button" data-mlr-case-image="images/SupervisedML/MLR/Understanding/Case-Study-3/04-first-gradient-update.png"><span>CS3 · 04</span>First Update</button><button type="button" data-mlr-case-image="images/SupervisedML/MLR/Understanding/Case-Study-3/05-iterations-and-convergence.png"><span>CS3 · 05</span>Convergence</button><button type="button" data-mlr-case-image="images/SupervisedML/MLR/Understanding/Case-Study-3/06-original-units.png"><span>CS3 · 06</span>Original Units</button><button type="button" data-mlr-case-image="images/SupervisedML/MLR/Understanding/Case-Study-3/07-evaluation-and-flow.png"><span>CS3 · 07</span>Evaluation &amp; Flow</button>
+        </nav>
+        <div class="lesson-stage"><img id="mlr-case-study-image" src="images/SupervisedML/MLR/Understanding/Case-Study-1/Multiple_Linear_Regression-CaseStudy1.jpg" alt="MLR Case Study 1"></div><footer class="lesson-controls"><button type="button" id="previous-mlr-case">Previous</button><span id="mlr-case-progress">1 of 1</span><button type="button" id="next-mlr-case">Next</button></footer>
+        <div class="learning-resources" id="mlr-case-3-downloads" hidden><strong>Case Study 3 Downloads</strong><a href="images/SupervisedML/MLR/Understanding/Case-Study-3/ecommerce_raw.csv" download>Raw Dataset</a><a href="images/SupervisedML/MLR/Understanding/Case-Study-3/solved_mlr_gradient_descent_44_steps.ipynb" download>Solved Notebook</a></div>
+      </section>
+      <section class="prerequisite-viewer" id="kmeans-prerequisite-viewer" aria-label="K-Means prerequisite" hidden><header class="viewer-heading"><div><p>K Mean Clusters</p><h2>Prerequisite</h2></div><button type="button" data-back-from-kmeans>Back to Algorithms</button></header><div class="lesson-stage"><img src="images/UnsupervisedMD/1_K_Mean_Cluster/1_Prerequisite/EuclideanDistance.jpg" alt="Euclidean distance prerequisite"></div></section>
+
+      <section class="prerequisite-viewer" id="kmeans-core-viewer" aria-label="K-Means core concepts" hidden><header class="viewer-heading"><div><p>K Mean Clusters</p><h2>Core Concepts</h2></div><button type="button" data-back-from-kmeans>Back to Algorithms</button></header><nav class="lesson-nav kmeans-core-nav"><button class="active" type="button" data-kmeans-core-image="images/UnsupervisedMD/1_K_Mean_Cluster/Concept/K-Means-Clustering-Part1.png"><span>01</span>Part 1</button><button type="button" data-kmeans-core-image="images/UnsupervisedMD/1_K_Mean_Cluster/Concept/K-Means-Clustering-Part2.jpg"><span>02</span>Part 2</button></nav><div class="lesson-stage"><img id="kmeans-core-image" src="images/UnsupervisedMD/1_K_Mean_Cluster/Concept/K-Means-Clustering-Part1.png" alt="K-Means Clustering Part 1"></div><footer class="lesson-controls"><button type="button" id="previous-kmeans-core">Previous</button><span id="kmeans-core-progress">1 of 2</span><button type="button" id="next-kmeans-core">Next</button></footer></section>
+
+      <section class="prerequisite-viewer" id="kmeans-understanding-viewer" aria-label="K-Means worked case study" hidden><header class="viewer-heading"><div><p>K Mean Clusters</p><h2>Agricultural Field Grouping</h2></div><button type="button" data-back-from-kmeans>Back to Algorithms</button></header><nav class="lesson-nav kmeans-understanding-nav"><button class="active" type="button" data-kmeans-understanding-image="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/01-understand-clustering.png"><span>01</span>Understand Clustering</button><button type="button" data-kmeans-understanding-image="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/02-prepare-and-standardize.png"><span>02</span>Prepare &amp; Standardize</button><button type="button" data-kmeans-understanding-image="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/03-kmeans-key-concepts.png"><span>03</span>Key Concepts</button><button type="button" data-kmeans-understanding-image="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/04-assign-nearest-center.png"><span>04</span>Assign Nearest Center</button><button type="button" data-kmeans-understanding-image="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/05-update-and-converge.png"><span>05</span>Update &amp; Converge</button><button type="button" data-kmeans-understanding-image="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/06-choose-four-clusters.png"><span>06</span>Choose Four Clusters</button><button type="button" data-kmeans-understanding-image="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/07-interpret-field-groups.png"><span>07</span>Interpret Groups</button><button type="button" data-kmeans-understanding-image="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/08-visualize-and-apply.png"><span>08</span>Visualize &amp; Apply</button><button type="button" data-kmeans-understanding-image="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/09-python-implementation.png"><span>09</span>Python Implementation</button></nav><div class="lesson-stage"><img id="kmeans-understanding-image" src="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/01-understand-clustering.png" alt="Understand K-Means clustering"></div><footer class="lesson-controls"><button type="button" id="previous-kmeans-understanding">Previous</button><span id="kmeans-understanding-progress">1 of 9</span><button type="button" id="next-kmeans-understanding">Next</button></footer><div class="learning-resources"><strong>Case Study Downloads</strong><a href="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/agricultural_fields.csv" download>Raw Fields Data</a><a href="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/agricultural_fields_with_clusters.csv" download>Clustered Fields</a><a href="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/field_groups_from_poster.csv" download>Field Groups</a><a href="images/UnsupervisedMD/1_K_Mean_Cluster/2_Understanding/solved_agricultural_field_grouping.ipynb" download>Solved Notebook</a></div></section>
+
+      <section class="prerequisite-viewer" id="kmeans-problems-viewer" aria-label="K-Means problem statements" hidden><header class="viewer-heading"><div><p>K Mean Clusters</p><h2>Problem Statements</h2></div><button type="button" data-back-from-kmeans>Back to Algorithms</button></header><div class="problem-grid"><article class="problem-card"><span>01</span><h3>Household Electricity Service Planning</h3><p>Discover groups of households with similar consumption and service patterns, then recommend suitable energy-saving programs for each group.</p><ol><li>Inspect and clean smart-meter data.</li><li>Scale measurements appropriately.</li><li>Justify the number of clusters.</li><li>Profile groups and recommend strategies.</li></ol><div class="card-links"><a href="images/UnsupervisedMD/1_K_Mean_Cluster/3_ProvideSolutions/ProblemStatement1/problem_statement.txt" download>Full Brief</a><a href="images/UnsupervisedMD/1_K_Mean_Cluster/3_ProvideSolutions/ProblemStatement1/household_electricity_usage.csv" download>Dataset</a></div></article><article class="problem-card"><span>02</span><h3>E-Commerce Inventory Strategy</h3><p>Discover product groups with similar commercial and supply characteristics, then design a distinct inventory policy for each group.</p><ol><li>Inspect product and supply data.</li><li>Handle scale and skewness.</li><li>Justify the number of clusters.</li><li>Profile groups and recommend policies.</li></ol><div class="card-links"><a href="images/UnsupervisedMD/1_K_Mean_Cluster/3_ProvideSolutions/ProblemStatement2/problem_statement.txt" download>Full Brief</a><a href="images/UnsupervisedMD/1_K_Mean_Cluster/3_ProvideSolutions/ProblemStatement2/ecommerce_product_inventory.csv" download>Dataset</a></div></article></div></section>
+    </main>
+  </div>
+  <dialog class="image-dialog" id="image-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header">
+      <h2 id="dialog-title">Machine Learning</h2>
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close image viewer">&times;</button>
+    </div>
+    <div class="dialog-content">
+      <img id="dialog-image" alt="">
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
