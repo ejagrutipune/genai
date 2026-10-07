@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>eJagruti | Path to GenAI Development</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=deep-learning-2">
   <style>html:not([data-authenticated]) body { display: none; }</style>
   <script src="js/auth.js" defer></script>
   <noscript><meta http-equiv="refresh" content="0; url=index.html"></noscript>
@@ -28,7 +28,7 @@
       <button class="menu-button" id="career-roadmap-button" type="button" aria-expanded="false" aria-controls="career-actions">Career Roadmap</button>
       <button class="menu-button" id="ai-button" type="button" aria-expanded="false" aria-controls="ai-actions">AI</button>
       <button class="menu-button" id="machine-learning-button" type="button" aria-expanded="false" aria-controls="machine-learning-tiles">Machine Learning</button>
-      <button class="menu-button" type="button" data-empty-menu>Deep Learning</button>
+      <button class="menu-button" id="deep-learning-button" type="button" aria-expanded="false" aria-controls="deep-learning-viewer" onclick="document.getElementById('deep-learning-viewer').hidden = false; this.setAttribute('aria-expanded', 'true');">Deep Learning</button>
       <button class="menu-button" id="statistics-button" type="button" aria-expanded="false" aria-controls="statistics-viewer">Statistics</button>
       <button class="menu-button" type="button" data-empty-menu>Calculas</button>
       <button class="menu-button" type="button" data-empty-menu>Linear Algebra</button>
@@ -68,6 +68,13 @@
         <button type="button" data-content-image="images/AI/3-Sample_Vs_Population_DF.jpg" data-content-alt="Sample versus population">Sample vs Population</button>
         <button type="button" data-content-image="images/AI/4-Types_Of_Data.jpg" data-content-alt="Types of data">Types of Data</button>
         <img class="track-overview" id="ai-content-image" src="images/AI/1_AI_Ecosystems.png" alt="Artificial Intelligence ecosystem overview" hidden>
+      </section>
+      <section class="deep-learning-viewer" id="deep-learning-viewer" aria-label="Deep Learning lessons" hidden>
+        <header class="viewer-heading"><div><p>Learning Path</p><h2>Deep Learning</h2></div><p class="deep-learning-intro">Choose a topic, then open any lesson or resource.</p></header>
+        <div class="deep-learning-layout">
+          <nav class="deep-learning-tree" id="deep-learning-tree" aria-label="Deep Learning course contents"><p class="deep-learning-loading">Loading course contents…</p></nav>
+          <article class="deep-learning-stage" id="deep-learning-stage" aria-live="polite"><p>Select a lesson from the course contents.</p></article>
+        </div>
       </section>
       <section class="learning-tiles" id="machine-learning-tiles" aria-label="Machine Learning categories" hidden>
         <div class="learning-column">
@@ -193,6 +200,6 @@
       <img id="dialog-image" alt="">
     </div>
   </dialog>
-  <script src="script.js"></script>
+  <script src="script.js?v=deep-learning-3"></script>
 </body>
 </html>

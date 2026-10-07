@@ -2,10 +2,15 @@ const homeButton = document.querySelector('#home-button');
 const careerButton = document.querySelector('#career-roadmap-button');
 const aiButton = document.querySelector('#ai-button');
 const machineLearningButton = document.querySelector('#machine-learning-button');
+const deepLearningButton = document.querySelector('#deep-learning-button');
 const statisticsButton = document.querySelector('#statistics-button');
 const careerActions = document.querySelector('#career-actions');
 const aiActions = document.querySelector('#ai-actions');
 const machineLearningTiles = document.querySelector('#machine-learning-tiles');
+const deepLearningViewer = document.querySelector('#deep-learning-viewer');
+const deepLearningTree = document.querySelector('#deep-learning-tree');
+const deepLearningStage = document.querySelector('#deep-learning-stage');
+let deepLearningLoaded = false;
 const supervisedAlgorithms = document.querySelector('#supervised-algorithms');
 const supervisedAlgorithmsLink = document.querySelector('#supervised-algorithms-link');
 const unsupervisedAlgorithms = document.querySelector('#unsupervised-algorithms');
@@ -87,6 +92,7 @@ function clearCanvas() {
   careerActions.hidden = true;
   aiActions.hidden = true;
   machineLearningTiles.hidden = true;
+  deepLearningViewer.hidden = true;
   supervisedAlgorithms.hidden = true;
   unsupervisedAlgorithms.hidden = true;
   prerequisiteViewer.hidden = true;
@@ -105,6 +111,7 @@ function clearCanvas() {
   careerButton.setAttribute('aria-expanded', 'false');
   aiButton.setAttribute('aria-expanded', 'false');
   machineLearningButton.setAttribute('aria-expanded', 'false');
+  deepLearningButton.setAttribute('aria-expanded', 'false');
   statisticsButton.setAttribute('aria-expanded', 'false');
   clearActiveButtons(careerActions);
   clearActiveButtons(aiActions);
@@ -167,6 +174,52 @@ machineLearningButton.addEventListener('click', () => {
   machineLearningButton.setAttribute('aria-expanded', String(willOpen));
   if (willOpen) machineLearningButton.classList.add('active');
 });
+
+function deepLearningLabel(value) {
+  return String(value).replace(/\.(png|jpe?g|xlsx|ejagruti)$/i, '').replace(/^\d+(?:\.\d+)?[_ -]*/, '').replace(/[_-]+/g, ' ').replace(/([a-z])([A-Z])/g, '$1 $2').trim();
+}
+function deepLearningPath(trail) { return `images/Deep_Learning/${trail.map((part) => String(part).replace(/\s+/g, '_')).join('/')}`; }
+function showDeepLearningFile(file, trail, button) {
+  document.querySelectorAll('.deep-learning-file').forEach((item) => item.classList.remove('active'));
+  button.classList.add('active');
+  const path = deepLearningPath([...trail, file]);
+  const title = [...trail, deepLearningLabel(file)].map(deepLearningLabel).join(' · ');
+  deepLearningStage.innerHTML = `<h3>${title}</h3>`;
+  if (/\.(png|jpe?g|gif|webp|svg)$/i.test(file)) {
+    const image = document.createElement('img'); image.src = path; image.alt = title; deepLearningStage.appendChild(image); return;
+  }
+  const message = document.createElement('p'); message.textContent = 'This learning resource is available as a download.';
+  const download = document.createElement('a'); download.className = 'deep-learning-download'; download.href = path; download.download = file; download.textContent = `Download ${file.split('.').pop().toUpperCase()} resource`;
+  deepLearningStage.append(message, download);
+}
+function createDeepLearningBranch(value, trail) {
+  const fragment = document.createDocumentFragment();
+  if (Array.isArray(value)) {
+    value.forEach((file) => { const button = document.createElement('button'); button.type = 'button'; button.className = 'deep-learning-file'; button.textContent = deepLearningLabel(file); button.addEventListener('click', () => showDeepLearningFile(file, trail, button)); fragment.appendChild(button); });
+    return fragment;
+  }
+  Object.entries(value).forEach(([name, children]) => { const group = document.createElement('details'); group.open = trail.length < 1; const summary = document.createElement('summary'); summary.textContent = deepLearningLabel(name); group.append(summary, createDeepLearningBranch(children, [...trail, name])); fragment.appendChild(group); });
+  return fragment;
+}
+async function loadDeepLearningContents() {
+  if (deepLearningLoaded) return;
+  try { const response = await fetch('resources/menu.json'); if (!response.ok) throw new Error(); const menu = await response.json(); if (!menu['Deep Learning']) throw new Error(); deepLearningTree.replaceChildren(createDeepLearningBranch(menu['Deep Learning'], [])); deepLearningLoaded = true; }
+  catch { deepLearningTree.innerHTML = '<p class="deep-learning-loading">Unable to load the Deep Learning course contents.</p>'; }
+}
+async function openDeepLearning() {
+  // Hide every other canvas section directly. This keeps the Deep Learning menu
+  // independent from the setup required by the other course viewers.
+  document.querySelectorAll('.ejcanvas > section').forEach((section) => {
+    if (section !== deepLearningViewer) section.hidden = true;
+  });
+  clearMainMenu();
+  deepLearningViewer.hidden = false;
+  deepLearningButton.setAttribute('aria-expanded', 'true');
+  deepLearningButton.classList.add('active');
+  await loadDeepLearningContents();
+}
+
+deepLearningButton.addEventListener('click', openDeepLearning);
 
 function showStatistic(index) {
   currentStatistic = (index + statisticsButtons.length) % statisticsButtons.length;
