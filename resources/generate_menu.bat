@@ -1,7 +1,7 @@
 @echo off
-REM Batch file to generate menu.json from courses folder
+REM Batch file to generate topics.json from the topics folder
 REM Author: Ejagruti
-REM Description: Automatically generates menu.json by reading the courses folder structure
+REM Description: Automatically generates the homepage topics manifest from topics/
 
 ::Set color and title
 color 0A
@@ -34,21 +34,21 @@ echo   Starting Ejagruti Menu Generator
 echo =========================================================
 echo.
 
-uv run python menu.py
+uv run python generate_topics.py
 
 ::Check if successful
 if errorlevel 1 (
     color 0C
     echo.
     echo =========================================================
-    echo ERROR: Failed to generate menu.json
+    echo ERROR: Failed to generate topics.json
     echo =========================================================
     echo.
 ) else (
     color 0B
     echo.
     echo =========================================================
-    echo SUCCESS: menu.json has been generated!
+    echo SUCCESS: topics.json has been generated!
     echo =========================================================
     echo.
 )

@@ -1,0 +1,746 @@
+{
+  "topics": [
+    {
+      "name": "AI",
+      "path": "topics/AI",
+      "folders": [],
+      "files": [
+        {
+          "name": "1_AI_Ecosystems.png",
+          "path": "topics/AI/1_AI_Ecosystems.png"
+        },
+        {
+          "name": "2_AIvsMLvsDL.gif",
+          "path": "topics/AI/2_AIvsMLvsDL.gif"
+        }
+      ]
+    },
+    {
+      "name": "Career Roadmap",
+      "path": "topics/Career Roadmap",
+      "folders": [],
+      "files": [
+        {
+          "name": "1_Different_Tracks.png",
+          "path": "topics/Career Roadmap/1_Different_Tracks.png"
+        },
+        {
+          "name": "2_DataTrack.png",
+          "path": "topics/Career Roadmap/2_DataTrack.png"
+        },
+        {
+          "name": "3_MLTrack.png",
+          "path": "topics/Career Roadmap/3_MLTrack.png"
+        },
+        {
+          "name": "4_GenAITrack.png",
+          "path": "topics/Career Roadmap/4_GenAITrack.png"
+        },
+        {
+          "name": "5_PlatformAndInfrastructure_Track.png",
+          "path": "topics/Career Roadmap/5_PlatformAndInfrastructure_Track.png"
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "path": "topics/Machine Learning",
+      "folders": [
+        {
+          "name": "Reinforcement Machine Learning",
+          "path": "topics/Machine Learning/Reinforcement Machine Learning",
+          "folders": [
+            {
+              "name": "About",
+              "path": "topics/Machine Learning/Reinforcement Machine Learning/About",
+              "folders": [],
+              "files": [
+                {
+                  "name": "What_Is_Rienforcement_Learning.jpg",
+                  "path": "topics/Machine Learning/Reinforcement Machine Learning/About/What_Is_Rienforcement_Learning.jpg"
+                }
+              ]
+            }
+          ],
+          "files": []
+        },
+        {
+          "name": "Supervised Machine Learning",
+          "path": "topics/Machine Learning/Supervised Machine Learning",
+          "folders": [
+            {
+              "name": "About",
+              "path": "topics/Machine Learning/Supervised Machine Learning/About",
+              "folders": [],
+              "files": [
+                {
+                  "name": "What_Is_Supervised_Learning.jpg",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/About/What_Is_Supervised_Learning.jpg"
+                }
+              ]
+            },
+            {
+              "name": "KNN",
+              "path": "topics/Machine Learning/Supervised Machine Learning/KNN",
+              "folders": [
+                {
+                  "name": "1_Prerequisite",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/KNN/1_Prerequisite",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "EuclideanDistance.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/1_Prerequisite/EuclideanDistance.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "2_Understanding",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/KNN/2_Understanding",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "1-KNN-Classification-Part1.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/2_Understanding/1-KNN-Classification-Part1.png"
+                    },
+                    {
+                      "name": "1.1-CorrectValueOf-K-In-KNN.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/2_Understanding/1.1-CorrectValueOf-K-In-KNN.png"
+                    },
+                    {
+                      "name": "2-KNN-Classification-Part2.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/2_Understanding/2-KNN-Classification-Part2.png"
+                    },
+                    {
+                      "name": "2.1-CorrectValueOf-K-In-KNN.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/2_Understanding/2.1-CorrectValueOf-K-In-KNN.png"
+                    },
+                    {
+                      "name": "KNN-Regression-Part1.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/2_Understanding/KNN-Regression-Part1.jpg"
+                    },
+                    {
+                      "name": "KNN-Regression-Part2.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/2_Understanding/KNN-Regression-Part2.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "3_ProvideSolutions",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/KNN/3_ProvideSolutions",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "KNN-Task1.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/3_ProvideSolutions/KNN-Task1.jpg"
+                    },
+                    {
+                      "name": "KNN-Task2.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/3_ProvideSolutions/KNN-Task2.jpg"
+                    }
+                  ]
+                }
+              ],
+              "files": []
+            },
+            {
+              "name": "Logistic_Regression",
+              "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression",
+              "folders": [
+                {
+                  "name": "1_About",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/1_About",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "1_Why_Logistic_Regression.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/1_About/1_Why_Logistic_Regression.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "2_Prerequisite",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "10_Confussion_Matrix.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/10_Confussion_Matrix.jpg"
+                    },
+                    {
+                      "name": "1_BeforeWeStart.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/1_BeforeWeStart.jpg"
+                    },
+                    {
+                      "name": "2_Growth.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/2_Growth.jpg"
+                    },
+                    {
+                      "name": "2_Log.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/2_Log.jpg"
+                    },
+                    {
+                      "name": "3_EulerNumber.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/3_EulerNumber.jpg"
+                    },
+                    {
+                      "name": "4_Log.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/4_Log.png"
+                    },
+                    {
+                      "name": "5_NaturalLog.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/5_NaturalLog.jpg"
+                    },
+                    {
+                      "name": "6_Odds.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/6_Odds.jpg"
+                    },
+                    {
+                      "name": "7_LogOfOdds.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/7_LogOfOdds.jpg"
+                    },
+                    {
+                      "name": "8_Logit.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/8_Logit.png"
+                    },
+                    {
+                      "name": "9_Logistic_Regression_Sigmoid_Equation.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/2_Prerequisite/9_Logistic_Regression_Sigmoid_Equation.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "3_Understanding",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "2_Problem_Statement.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/2_Problem_Statement.jpg"
+                    },
+                    {
+                      "name": "3_Z_Score_Data_Normalization.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/3_Z_Score_Data_Normalization.jpg"
+                    },
+                    {
+                      "name": "4_Step1_Step6.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/4_Step1_Step6.jpg"
+                    },
+                    {
+                      "name": "5_Step7_Step10.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/5_Step7_Step10.jpg"
+                    },
+                    {
+                      "name": "6_Step11_Step13.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/6_Step11_Step13.jpg"
+                    },
+                    {
+                      "name": "7_Calculate_Gradients.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/7_Calculate_Gradients.jpg"
+                    },
+                    {
+                      "name": "Binary_Logistic_Regression.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/Binary_Logistic_Regression.jpg"
+                    },
+                    {
+                      "name": "LogisticRegressionBasics.xls",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/LogisticRegressionBasics.xls"
+                    },
+                    {
+                      "name": "Multinomial_Logistic_Regression.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/Multinomial_Logistic_Regression.jpg"
+                    },
+                    {
+                      "name": "Ordinal_Logistic_Regression.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/3_Understanding/Ordinal_Logistic_Regression.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "4_ProvideSolutions",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/4_ProvideSolutions",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "1_CaseStudy.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/4_ProvideSolutions/1_CaseStudy.jpg"
+                    },
+                    {
+                      "name": "2_CastStudy.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Logistic_Regression/4_ProvideSolutions/2_CastStudy.jpg"
+                    }
+                  ]
+                }
+              ],
+              "files": []
+            },
+            {
+              "name": "MLR",
+              "path": "topics/Machine Learning/Supervised Machine Learning/MLR",
+              "folders": [
+                {
+                  "name": "1-About",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/MLR/1-About",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "MLR_Concept.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/1-About/MLR_Concept.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "2_Prerequisite",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "1-Covariance.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/1-Covariance.jpg"
+                    },
+                    {
+                      "name": "2-MultiCollinearity.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/2-MultiCollinearity.jpg"
+                    },
+                    {
+                      "name": "3-Derivative.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/3-Derivative.png"
+                    },
+                    {
+                      "name": "4-GradientDescent.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/4-GradientDescent.jpg"
+                    },
+                    {
+                      "name": "5a-Coefficient_Of_Determination.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/5a-Coefficient_Of_Determination.jpg"
+                    },
+                    {
+                      "name": "5b-Covariance.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/5b-Covariance.jpg"
+                    },
+                    {
+                      "name": "6-ANOVA.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/6-ANOVA.jpg"
+                    },
+                    {
+                      "name": "7-Matrices_Part2.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/7-Matrices_Part2.jpg"
+                    },
+                    {
+                      "name": "8-Matrices_Part1.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/8-Matrices_Part1.png"
+                    },
+                    {
+                      "name": "HowGradientDescentWorks.xlsx",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/2_Prerequisite/HowGradientDescentWorks.xlsx"
+                    }
+                  ]
+                },
+                {
+                  "name": "3_Understanding",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding",
+                  "folders": [
+                    {
+                      "name": "Case-Study-1",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-1",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "Multiple_Linear_Regression-CaseStudy1.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-1/Multiple_Linear_Regression-CaseStudy1.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Case-Study-2",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-2",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "Multiple_Linear_Regression-CaseStudy2.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-2/Multiple_Linear_Regression-CaseStudy2.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Case-Study-3",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "01-business-and-data.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/01-business-and-data.png"
+                        },
+                        {
+                          "name": "02-standardization.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/02-standardization.png"
+                        },
+                        {
+                          "name": "03-predictions-and-cost.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/03-predictions-and-cost.png"
+                        },
+                        {
+                          "name": "04-first-gradient-update.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/04-first-gradient-update.png"
+                        },
+                        {
+                          "name": "05-iterations-and-convergence.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/05-iterations-and-convergence.png"
+                        },
+                        {
+                          "name": "06-original-units.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/06-original-units.png"
+                        },
+                        {
+                          "name": "07-evaluation-and-flow.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/07-evaluation-and-flow.png"
+                        },
+                        {
+                          "name": "ecommerce_raw.csv",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/ecommerce_raw.csv"
+                        },
+                        {
+                          "name": "solved_mlr_gradient_descent_44_steps.ipynb",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/solved_mlr_gradient_descent_44_steps.ipynb"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Case-Study-4",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-4",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "MultipleLinearRegression1-CaseStudy4.pdf",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-4/MultipleLinearRegression1-CaseStudy4.pdf"
+                        }
+                      ]
+                    }
+                  ],
+                  "files": []
+                }
+              ],
+              "files": []
+            },
+            {
+              "name": "SLR",
+              "path": "topics/Machine Learning/Supervised Machine Learning/SLR",
+              "folders": [
+                {
+                  "name": "1_About",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/SLR/1_About",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "1-SLR.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/1_About/1-SLR.png"
+                    },
+                    {
+                      "name": "2-SLR.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/1_About/2-SLR.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "2_Prerequisite",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "1-Sample_Vs_Population_DF.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite/1-Sample_Vs_Population_DF.jpg"
+                    },
+                    {
+                      "name": "2-Types_Of_Data.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite/2-Types_Of_Data.jpg"
+                    },
+                    {
+                      "name": "3-Mean_Median_Mode.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite/3-Mean_Median_Mode.png"
+                    },
+                    {
+                      "name": "4-Standard_Deviation.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite/4-Standard_Deviation.png"
+                    },
+                    {
+                      "name": "5-Slope_Of_A_Line.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite/5-Slope_Of_A_Line.png"
+                    },
+                    {
+                      "name": "6-Pearson_Correlation_Coefficient.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite/6-Pearson_Correlation_Coefficient.jpg"
+                    },
+                    {
+                      "name": "7-Coefficient_Of_Determination.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite/7-Coefficient_Of_Determination.jpg"
+                    },
+                    {
+                      "name": "8-Held-Out-Error.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite/8-Held-Out-Error.png"
+                    },
+                    {
+                      "name": "8-Inner_Quartile_Range.png",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/2_Prerequisite/8-Inner_Quartile_Range.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "3_Understanding",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding",
+                  "folders": [
+                    {
+                      "name": "Case-Study-1",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "01_problem_and_raw_data.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/01_problem_and_raw_data.png"
+                        },
+                        {
+                          "name": "02_cleaning_and_outliers.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/02_cleaning_and_outliers.png"
+                        },
+                        {
+                          "name": "03_understanding_the_line.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/03_understanding_the_line.png"
+                        },
+                        {
+                          "name": "04_means_and_deviations.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/04_means_and_deviations.png"
+                        },
+                        {
+                          "name": "05_slope_and_intercept.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/05_slope_and_intercept.png"
+                        },
+                        {
+                          "name": "06_least_squares_derivation.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/06_least_squares_derivation.png"
+                        },
+                        {
+                          "name": "07_predictions_and_errors.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/07_predictions_and_errors.png"
+                        },
+                        {
+                          "name": "08_errors_and_new_prediction.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/08_errors_and_new_prediction.png"
+                        },
+                        {
+                          "name": "09_metrics_and_limits.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/09_metrics_and_limits.png"
+                        },
+                        {
+                          "name": "10_python_load_clean.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/10_python_load_clean.png"
+                        },
+                        {
+                          "name": "11_python_fit_visualize.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/11_python_fit_visualize.png"
+                        },
+                        {
+                          "name": "12_python_holdout.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/12_python_holdout.png"
+                        },
+                        {
+                          "name": "deliveries_clean.csv",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/deliveries_clean.csv"
+                        },
+                        {
+                          "name": "deliveries_raw.csv",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/deliveries_raw.csv"
+                        },
+                        {
+                          "name": "solved_slr.ipynb",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-1/solved_slr.ipynb"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Case-Study-2",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-2",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "03_build_the_model.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-2/03_build_the_model.png"
+                        },
+                        {
+                          "name": "04_use_the_model.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-2/04_use_the_model.png"
+                        },
+                        {
+                          "name": "1-HP-Prediction.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-2/1-HP-Prediction.png"
+                        },
+                        {
+                          "name": "2-HP-Prediction.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-2/2-HP-Prediction.png"
+                        },
+                        {
+                          "name": "5_SLR.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-2/5_SLR.png"
+                        },
+                        {
+                          "name": "eJagruti_House_Price_Raw_Data.csv",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-2/eJagruti_House_Price_Raw_Data.csv"
+                        },
+                        {
+                          "name": "eJagruti_House_Price_Simple_Linear_Regression.ipynb",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/3_Understanding/Case-Study-2/eJagruti_House_Price_Simple_Linear_Regression.ipynb"
+                        }
+                      ]
+                    }
+                  ],
+                  "files": []
+                },
+                {
+                  "name": "4_Task",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task",
+                  "folders": [],
+                  "files": []
+                }
+              ],
+              "files": []
+            }
+          ],
+          "files": []
+        },
+        {
+          "name": "Unsupervised Machine Learning",
+          "path": "topics/Machine Learning/Unsupervised Machine Learning",
+          "folders": [
+            {
+              "name": "About",
+              "path": "topics/Machine Learning/Unsupervised Machine Learning/About",
+              "folders": [],
+              "files": [
+                {
+                  "name": "What_Is_Unsupervised_Learning.jpg",
+                  "path": "topics/Machine Learning/Unsupervised Machine Learning/About/What_Is_Unsupervised_Learning.jpg"
+                }
+              ]
+            },
+            {
+              "name": "KMeans",
+              "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans",
+              "folders": [
+                {
+                  "name": "1_About",
+                  "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/1_About",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "K-means Clustering.png",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/1_About/K-means Clustering.png"
+                    }
+                  ]
+                },
+                {
+                  "name": "2_Prerequisite",
+                  "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/2_Prerequisite",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "EuclideanDistance.jpg",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/2_Prerequisite/EuclideanDistance.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "3_Understanding",
+                  "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding",
+                  "folders": [
+                    {
+                      "name": "Case-Study-1",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-1",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "K-Means-Clustering-Part1.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-1/K-Means-Clustering-Part1.png"
+                        },
+                        {
+                          "name": "K-Means-Clustering-Part2.jpg",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-1/K-Means-Clustering-Part2.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Case-Study-2",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "01-understand-clustering.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/01-understand-clustering.png"
+                        },
+                        {
+                          "name": "02-prepare-and-standardize.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/02-prepare-and-standardize.png"
+                        },
+                        {
+                          "name": "03-kmeans-key-concepts.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/03-kmeans-key-concepts.png"
+                        },
+                        {
+                          "name": "04-assign-nearest-center.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/04-assign-nearest-center.png"
+                        },
+                        {
+                          "name": "05-update-and-converge.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/05-update-and-converge.png"
+                        },
+                        {
+                          "name": "06-choose-four-clusters.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/06-choose-four-clusters.png"
+                        },
+                        {
+                          "name": "07-interpret-field-groups.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/07-interpret-field-groups.png"
+                        },
+                        {
+                          "name": "08-visualize-and-apply.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/08-visualize-and-apply.png"
+                        },
+                        {
+                          "name": "09-python-implementation.png",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/09-python-implementation.png"
+                        },
+                        {
+                          "name": "agricultural_fields.csv",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/agricultural_fields.csv"
+                        },
+                        {
+                          "name": "agricultural_fields_with_clusters.csv",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/agricultural_fields_with_clusters.csv"
+                        },
+                        {
+                          "name": "field_groups_from_poster.csv",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/field_groups_from_poster.csv"
+                        },
+                        {
+                          "name": "solved_agricultural_field_grouping.ipynb",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/3_Understanding/Case-Study-2/solved_agricultural_field_grouping.ipynb"
+                        }
+                      ]
+                    }
+                  ],
+                  "files": []
+                },
+                {
+                  "name": "4_Task",
+                  "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/4_Task",
+                  "folders": [],
+                  "files": []
+                }
+              ],
+              "files": []
+            }
+          ],
+          "files": []
+        }
+      ],
+      "files": []
+    }
+  ]
+}

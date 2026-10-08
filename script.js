@@ -7,10 +7,17 @@ const statisticsButton = document.querySelector('#statistics-button');
 const careerActions = document.querySelector('#career-actions');
 const aiActions = document.querySelector('#ai-actions');
 const machineLearningTiles = document.querySelector('#machine-learning-tiles');
+const deepLearningTiles = document.querySelector('#deep-learning-tiles');
 const deepLearningViewer = document.querySelector('#deep-learning-viewer');
-const deepLearningTree = document.querySelector('#deep-learning-tree');
+const deepLearningNav = document.querySelector('#deep-learning-nav');
 const deepLearningStage = document.querySelector('#deep-learning-stage');
+const deepLearningTitle = document.querySelector('#deep-learning-title');
+const deepLearningBreadcrumb = document.querySelector('#deep-learning-breadcrumb');
+const deepLearningProgress = document.querySelector('#deep-learning-progress');
 let deepLearningLoaded = false;
+let deepLearningMenu = null;
+let deepLearningLessons = [];
+let currentDeepLearningLesson = 0;
 const supervisedAlgorithms = document.querySelector('#supervised-algorithms');
 const supervisedAlgorithmsLink = document.querySelector('#supervised-algorithms-link');
 const unsupervisedAlgorithms = document.querySelector('#unsupervised-algorithms');
@@ -92,6 +99,7 @@ function clearCanvas() {
   careerActions.hidden = true;
   aiActions.hidden = true;
   machineLearningTiles.hidden = true;
+  deepLearningTiles.hidden = true;
   deepLearningViewer.hidden = true;
   supervisedAlgorithms.hidden = true;
   unsupervisedAlgorithms.hidden = true;
@@ -219,7 +227,71 @@ async function openDeepLearning() {
   await loadDeepLearningContents();
 }
 
-deepLearningButton.addEventListener('click', openDeepLearning);
+function findDeepLearningGroup(path) {
+  return path.reduce((group, key) => group && group[key], deepLearningMenu);
+}
+
+function collectDeepLearningLessons(group, trail, lessons = []) {
+  if (Array.isArray(group)) {
+    group.forEach((file) => lessons.push({ file, trail }));
+    return lessons;
+  }
+  Object.entries(group).forEach(([name, child]) => collectDeepLearningLessons(child, [...trail, name], lessons));
+  return lessons;
+}
+
+function showDeepLearningLesson(index) {
+  currentDeepLearningLesson = (index + deepLearningLessons.length) % deepLearningLessons.length;
+  const lesson = deepLearningLessons[currentDeepLearningLesson];
+  [...deepLearningNav.children].forEach((button, buttonIndex) => button.classList.toggle('active', buttonIndex === currentDeepLearningLesson));
+  deepLearningStage.innerHTML = '';
+  const path = deepLearningPath([...lesson.trail, lesson.file]);
+  if (/\.(png|jpe?g|gif|webp|svg)$/i.test(lesson.file)) {
+    const image = document.createElement('img'); image.src = path; image.alt = deepLearningLabel(lesson.file); deepLearningStage.appendChild(image);
+  } else {
+    const download = document.createElement('a'); download.className = 'deep-learning-download'; download.href = path; download.download = lesson.file; download.textContent = `Download ${lesson.file.split('.').pop().toUpperCase()} resource`; deepLearningStage.appendChild(download);
+  }
+  deepLearningProgress.textContent = `${currentDeepLearningLesson + 1} of ${deepLearningLessons.length}`;
+}
+
+function openDeepLearningGroup(path) {
+  deepLearningLessons = collectDeepLearningLessons(findDeepLearningGroup(path), path);
+  deepLearningTiles.hidden = true;
+  deepLearningViewer.hidden = false;
+  deepLearningBreadcrumb.textContent = `Deep Learning · ${deepLearningLabel(path[0])}`;
+  deepLearningTitle.textContent = path.slice(1).map(deepLearningLabel).join(' · ');
+  deepLearningNav.innerHTML = '';
+  deepLearningLessons.forEach((lesson, index) => {
+    const button = document.createElement('button'); button.type = 'button';
+    button.innerHTML = `<span>${String(index + 1).padStart(2, '0')}</span>${deepLearningLabel(lesson.file)}`;
+    button.addEventListener('click', () => showDeepLearningLesson(index)); deepLearningNav.appendChild(button);
+  });
+  showDeepLearningLesson(0);
+}
+
+async function loadDeepLearningMenu() {
+  if (deepLearningLoaded) return true;
+  const response = await fetch('resources/menu.json');
+  const menu = await response.json();
+  deepLearningMenu = menu['Deep Learning'];
+  deepLearningLoaded = Boolean(deepLearningMenu);
+  return deepLearningLoaded;
+}
+
+deepLearningButton.addEventListener('click', () => {
+  const willOpen = deepLearningTiles.hidden;
+  clearCanvas(); clearMainMenu();
+  deepLearningTiles.hidden = !willOpen;
+  deepLearningButton.setAttribute('aria-expanded', String(willOpen));
+  if (willOpen) deepLearningButton.classList.add('active');
+});
+document.querySelectorAll('[data-deep-path]').forEach((button) => button.addEventListener('click', async () => {
+  try { if (await loadDeepLearningMenu()) openDeepLearningGroup(button.dataset.deepPath.split('|')); }
+  catch { deepLearningTitle.textContent = 'Unable to load course content'; deepLearningViewer.hidden = false; }
+}));
+document.querySelector('#previous-deep-learning').addEventListener('click', () => showDeepLearningLesson(currentDeepLearningLesson - 1));
+document.querySelector('#next-deep-learning').addEventListener('click', () => showDeepLearningLesson(currentDeepLearningLesson + 1));
+document.querySelector('#back-to-deep-learning').addEventListener('click', () => { deepLearningViewer.hidden = true; deepLearningTiles.hidden = false; });
 
 function showStatistic(index) {
   currentStatistic = (index + statisticsButtons.length) % statisticsButtons.length;
@@ -501,3 +573,333 @@ document.querySelectorAll('[data-content-image]').forEach((button) => {
     button.classList.add('active');
   });
 });
+
+const topicMenu = document.querySelector('#topic-menu');
+const topicsBrowser = document.querySelector('#topics-browser');
+const topicsBack = document.querySelector('#topics-back');
+const topicsBreadcrumb = document.querySelector('#topics-breadcrumb');
+const topicFolderGrid = document.querySelector('#topic-folder-grid');
+const topicFileList = document.querySelector('#topic-file-list');
+const topicsStatus = document.querySelector('#topics-status');
+let topicManifest = [];
+let currentTopicPath = [];
+const topicPreview = document.querySelector('#topic-preview');
+const topicPreviewImage = document.querySelector('#topic-preview-image');
+const topicPreviewError = document.querySelector('#topic-preview-error');
+const topicDownloads = document.querySelector('#topic-downloads');
+const topicDownloadList = document.querySelector('#topic-download-list');
+const topicOrder = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
+let activeTopicImages = [];
+let activeTopicImageIndex = 0;
+const libraryPrevious = document.querySelector('#library-previous');
+const libraryNext = document.querySelector('#library-next');
+const librarySize = document.querySelector('#library-image-size');
+const librarySidebarToggle = document.querySelector('#topic-sidebar-toggle');
+
+function moveTopicImage(offset) {
+  const file = activeTopicImages[activeTopicImageIndex + offset];
+  if (!file) return;
+  const button = [...topicFileList.querySelectorAll('[data-image-path]')]
+    .find((item) => item.dataset.imagePath === file.path);
+  showTopicImage(file, button);
+}
+libraryPrevious.addEventListener('click', () => moveTopicImage(-1));
+libraryNext.addEventListener('click', () => moveTopicImage(1));
+librarySize.addEventListener('click', () => {
+  const original = topicPreview.classList.toggle('original-size');
+  librarySize.setAttribute('aria-pressed', String(original));
+  librarySize.textContent = original ? 'Fit image' : 'Original size';
+});
+librarySidebarToggle.addEventListener('click', () => {
+  const collapsed = topicsBrowser.classList.toggle('sidebar-collapsed');
+  librarySidebarToggle.setAttribute('aria-expanded', String(!collapsed));
+});
+
+function isTopicImage(file) {
+  return /\.(png|jpe?g|gif|webp|svg|avif|bmp|ico)$/i.test(file.name);
+}
+
+function orderedTopicItems(items) {
+  return [...items].sort((a, b) => topicOrder.compare(a.name, b.name));
+}
+
+function topicThumbnail(folder) {
+  const images = orderedTopicItems(folder.files).filter(isTopicImage);
+  const direct = images.find((file) => /thumbnail|cover/i.test(file.name)) || images[0];
+  if (direct) return direct;
+  for (const child of orderedTopicItems(folder.folders)) {
+    const nested = topicThumbnail(child);
+    if (nested) return nested;
+  }
+  return null;
+}
+
+function createTopicTile(folder, path) {
+  const tile = document.createElement('button');
+  tile.type = 'button';
+  tile.className = 'topic-folder-tile';
+  tile.setAttribute('aria-label', `Open ${topicLabel(folder.name)} folder`);
+  const thumbnail = topicThumbnail(folder);
+  if (thumbnail) {
+    const image = document.createElement('img');
+    image.src = topicAssetUrl(thumbnail.path);
+    image.alt = '';
+    image.loading = 'lazy';
+    image.addEventListener('error', () => image.replaceWith(createTopicPlaceholder()));
+    tile.appendChild(image);
+  } else {
+    tile.appendChild(createTopicPlaceholder());
+  }
+  const label = document.createElement('span');
+  label.className = 'topic-tile-label';
+  label.textContent = topicLabel(folder.name);
+  tile.appendChild(label);
+  const detail = document.createElement('small');
+  detail.textContent = `${folder.folders.length} folders · ${folder.files.length} files`;
+  tile.appendChild(detail);
+  tile.addEventListener('click', () => renderTopicContents(folder, path));
+  return tile;
+}
+
+function createTopicPlaceholder() {
+  const placeholder = document.createElement('span');
+  placeholder.className = 'topic-tile-placeholder';
+  placeholder.textContent = 'Folder';
+  return placeholder;
+}
+
+function resetTopicResources() {
+  topicFileList.replaceChildren();
+  topicDownloadList.replaceChildren();
+  topicDownloads.hidden = true;
+  topicPreview.hidden = true;
+  topicPreviewImage.removeAttribute('src');
+  topicPreviewError.hidden = true;
+}
+
+function showTopicImage(file, selectedButton) {
+  activeTopicImageIndex = activeTopicImages.findIndex((item) => item.path === file.path);
+  document.querySelector('#library-lesson-title').textContent = topicLabel(file.name);
+  document.querySelector('#library-step-progress').textContent = `LESSON ${activeTopicImageIndex + 1} OF ${activeTopicImages.length}`;
+  libraryPrevious.disabled = activeTopicImageIndex <= 0;
+  libraryNext.disabled = activeTopicImageIndex >= activeTopicImages.length - 1;
+  const stage = document.querySelector('#library-image-stage');
+  stage.scrollTop = 0;
+  stage.scrollLeft = 0;
+  topicFileList.querySelectorAll('[data-image-path]').forEach((button) => {
+    const active = button === selectedButton;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+  topicPreviewError.hidden = true;
+  topicPreviewImage.hidden = false;
+  topicPreviewImage.alt = topicLabel(file.name);
+  topicPreviewImage.src = topicAssetUrl(file.path);
+  topicPreview.hidden = false;
+}
+
+function renderTopicTree(root, rootPath) {
+  topicFileList.replaceChildren();
+  function branch(folder, path, number) {
+    const group = document.createElement('details');
+    group.className = 'topic-tree-branch';
+    group.open = path.every((name, index) => currentTopicPath[index] === name);
+    const summary = document.createElement('summary');
+    const folderButton = document.createElement('button');
+    folderButton.type = 'button';
+    folderButton.className = 'topic-tree-folder';
+    folderButton.textContent = topicLabel(folder.name);
+    folderButton.classList.toggle('current-folder', path.join('/') === currentTopicPath.join('/'));
+    folderButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      renderTopicContents(folder, path);
+    });
+    summary.appendChild(folderButton);
+    group.appendChild(summary);
+    const children = document.createElement('div');
+    children.className = 'topic-tree-children';
+    orderedTopicItems(folder.files).filter(isTopicImage).forEach((file, index) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'topic-file-button';
+      button.dataset.imagePath = file.path;
+      button.textContent = `${String(index + 1).padStart(2, '0')}. ${topicLabel(file.name)}`;
+      button.title = file.name;
+      button.setAttribute('aria-pressed', 'false');
+      button.addEventListener('click', () => {
+        if (path.join('/') !== currentTopicPath.join('/')) {
+          renderTopicContents(folder, path);
+        }
+        const selected = [...topicFileList.querySelectorAll('[data-image-path]')]
+          .find((item) => item.dataset.imagePath === file.path);
+        showTopicImage(file, selected);
+      });
+      children.appendChild(button);
+      if (path.join('/') === currentTopicPath.join('/') && topicPreview.hidden) {
+        showTopicImage(file, button);
+      }
+    });
+    orderedTopicItems(folder.folders).forEach((child, index) => {
+      children.appendChild(branch(child, [...path, child.name], `${number}.${index + 1}`));
+    });
+    group.appendChild(children);
+    return group;
+  }
+  topicFileList.appendChild(branch(root, rootPath, '1'));
+  const selected = [...topicFileList.querySelectorAll('[data-image-path]')]
+    .find((button) => topicAssetUrl(button.dataset.imagePath) === topicPreviewImage.getAttribute('src'));
+  if (selected) {
+    selected.classList.add('active');
+    selected.setAttribute('aria-pressed', 'true');
+  }
+}
+
+topicPreviewImage.addEventListener('error', () => {
+  topicPreviewImage.hidden = true;
+  topicPreviewError.hidden = false;
+});
+
+function topicLabel(value) {
+  return String(value)
+    .replace(/\.[^.]+$/, '')
+    .replace(/^\d+(?:\.\d+)?[_ -]*/, '')
+    .replace(/[_-]+/g, ' ')
+    .replace(/([a-z])([A-Z])/g, '$1 $2')
+    .trim();
+}
+
+function topicAssetUrl(path) {
+  return path.split('/').map((segment) => encodeURIComponent(segment)).join('/');
+}
+
+function findTopicFolder(path) {
+  let folder = topicManifest.find((item) => item.name === path[0]);
+  for (const name of path.slice(1)) {
+    folder = folder?.folders.find((item) => item.name === name);
+  }
+  return folder;
+}
+
+function setTopicMenuActive(topicName) {
+  clearMainMenu();
+  topicMenu.querySelectorAll('button').forEach((button) => {
+    const active = button.dataset.topicName === topicName;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-current', active ? 'page' : 'false');
+  });
+  if (!topicName) homeButton.classList.add('active');
+}
+
+function renderTopicContents(folder, path) {
+  clearCanvas();
+  currentTopicPath = path;
+  activeTopicImages = orderedTopicItems(folder.files).filter(isTopicImage);
+  document.querySelector('#library-welcome').hidden = true;
+  librarySidebarToggle.hidden = false;
+  if (window.matchMedia('(max-width: 540px)').matches) {
+    topicsBrowser.classList.add('sidebar-collapsed');
+    librarySidebarToggle.setAttribute('aria-expanded', 'false');
+  }
+  topicFolderGrid.replaceChildren();
+  resetTopicResources();
+  topicsStatus.hidden = true;
+  topicsBack.hidden = false;
+  topicsBreadcrumb.replaceChildren();
+
+  path.forEach((name, index) => {
+    if (index) {
+      const separator = document.createElement('span');
+      separator.textContent = '›';
+      topicsBreadcrumb.appendChild(separator);
+    }
+    const crumb = document.createElement('button');
+    crumb.type = 'button';
+    crumb.textContent = topicLabel(name);
+    crumb.addEventListener('click', () => {
+      const crumbPath = path.slice(0, index + 1);
+      renderTopicContents(findTopicFolder(crumbPath), crumbPath);
+    });
+    topicsBreadcrumb.appendChild(crumb);
+  });
+
+  orderedTopicItems(folder.folders).forEach((child) => {
+    topicFolderGrid.appendChild(createTopicTile(child, [...path, child.name]));
+  });
+
+  orderedTopicItems(folder.files).forEach((file) => {
+    if (!isTopicImage(file)) {
+      const resource = document.createElement('a');
+      resource.className = 'topic-download-link';
+      resource.href = topicAssetUrl(file.path);
+      resource.download = file.name;
+      resource.textContent = `Download ${file.name}`;
+      topicDownloadList.appendChild(resource);
+      topicDownloads.hidden = false;
+      return;
+    }
+  });
+  renderTopicTree(findTopicFolder([path[0]]), [path[0]]);
+  document.querySelector('.topics-content').scrollTop = 0;
+
+  if (!folder.folders.length && !folder.files.length) {
+    topicsStatus.textContent = 'This folder does not contain any resources yet.';
+    topicsStatus.hidden = false;
+  }
+  topicsBrowser.hidden = false;
+  setTopicMenuActive(path[0]);
+}
+
+function renderTopicsHome() {
+  clearCanvas();
+  currentTopicPath = [];
+  activeTopicImages = [];
+  document.querySelector('#library-welcome').hidden = false;
+  librarySidebarToggle.hidden = true;
+  topicFolderGrid.replaceChildren();
+  resetTopicResources();
+  topicsBreadcrumb.replaceChildren();
+  topicsBack.hidden = true;
+  topicsStatus.hidden = true;
+  topicManifest.forEach((topic) => {
+    topicFolderGrid.appendChild(createTopicTile(topic, [topic.name]));
+  });
+  topicsBrowser.hidden = false;
+  setTopicMenuActive('');
+}
+
+async function loadTopicManifest() {
+  try {
+    const response = await fetch('resources/topics.json');
+    if (!response.ok) throw new Error(`Manifest request failed: ${response.status}`);
+    const manifest = await response.json();
+    if (!Array.isArray(manifest.topics)) throw new Error('Invalid topic manifest');
+    topicManifest = orderedTopicItems(manifest.topics);
+    topicManifest.forEach((topic) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'menu-button';
+      button.textContent = topicLabel(topic.name);
+      button.dataset.topicName = topic.name;
+      button.addEventListener('click', () => renderTopicContents(topic, [topic.name]));
+      topicMenu.appendChild(button);
+    });
+    renderTopicsHome();
+  } catch (error) {
+    topicsBrowser.hidden = false;
+    topicsStatus.textContent = 'Unable to load topics. Run the topic menu generator and refresh this page.';
+    topicsStatus.hidden = false;
+    console.error('Could not load topic manifest:', error);
+  }
+}
+
+homeButton.addEventListener('click', renderTopicsHome);
+topicsBack.addEventListener('click', () => {
+  if (currentTopicPath.length <= 1) {
+    renderTopicsHome();
+    return;
+  }
+  const parentPath = currentTopicPath.slice(0, -1);
+  renderTopicContents(findTopicFolder(parentPath), parentPath);
+});
+
+loadTopicManifest();

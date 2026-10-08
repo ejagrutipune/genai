@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>eJagruti | Path to GenAI Development</title>
-  <link rel="stylesheet" href="styles.css?v=deep-learning-2">
+  <link rel="stylesheet" href="styles.css?v=library-10">
   <style>html:not([data-authenticated]) body { display: none; }</style>
   <script src="js/auth.js" defer></script>
   <noscript><meta http-equiv="refresh" content="0; url=index.html"></noscript>
 </head>
-<body>
+<body class="library-page">
   <div class="page-shell">
     <header class="ejtop">
       <div class="brand">
@@ -25,16 +25,42 @@
     </header>
     <nav class="ejmenu" aria-label="Main navigation">
       <button class="menu-button active" id="home-button" type="button">Home</button>
-      <button class="menu-button" id="career-roadmap-button" type="button" aria-expanded="false" aria-controls="career-actions">Career Roadmap</button>
-      <button class="menu-button" id="ai-button" type="button" aria-expanded="false" aria-controls="ai-actions">AI</button>
-      <button class="menu-button" id="machine-learning-button" type="button" aria-expanded="false" aria-controls="machine-learning-tiles">Machine Learning</button>
-      <button class="menu-button" id="deep-learning-button" type="button" aria-expanded="false" aria-controls="deep-learning-viewer" onclick="document.getElementById('deep-learning-viewer').hidden = false; this.setAttribute('aria-expanded', 'true');">Deep Learning</button>
-      <button class="menu-button" id="statistics-button" type="button" aria-expanded="false" aria-controls="statistics-viewer">Statistics</button>
-      <button class="menu-button" type="button" data-empty-menu>Calculas</button>
-      <button class="menu-button" type="button" data-empty-menu>Linear Algebra</button>
-      <button class="menu-button" type="button" data-empty-menu>Setup</button>
+      <div class="topic-menu" id="topic-menu" aria-label="Topics"></div>
+      <button class="library-control" id="topic-sidebar-toggle" type="button" aria-expanded="true" aria-controls="topic-sidebar" hidden>Contents</button>
+      <button class="topics-back" id="topics-back" type="button" hidden>Back</button>
+      <button class="menu-button" id="career-roadmap-button" type="button" aria-expanded="false" aria-controls="career-actions" hidden>Career Roadmap</button>
+      <button class="menu-button" id="ai-button" type="button" aria-expanded="false" aria-controls="ai-actions" hidden>AI</button>
+      <button class="menu-button" id="machine-learning-button" type="button" aria-expanded="false" aria-controls="machine-learning-tiles" hidden>Machine Learning</button>
+      <button class="menu-button" id="deep-learning-button" type="button" aria-expanded="false" aria-controls="deep-learning-tiles" hidden>Deep Learning</button>
+      <button class="menu-button" id="statistics-button" type="button" aria-expanded="false" aria-controls="statistics-viewer" hidden>Statistics</button>
+      <button class="menu-button" type="button" data-empty-menu hidden>Calculas</button>
+      <button class="menu-button" type="button" data-empty-menu hidden>Linear Algebra</button>
+      <button class="menu-button" type="button" data-empty-menu hidden>Setup</button>
     </nav>
     <main class="ejcanvas">
+      <section class="topics-browser" id="topics-browser" aria-label="Topic contents" hidden>
+        <aside class="topics-sidebar" id="topic-sidebar" aria-label="Image selection">
+          <div class="library-sidebar-heading">Course contents<span>Explore folders and lessons</span></div>
+          <div class="topic-file-list" id="topic-file-list" aria-label="Images"></div>
+        </aside>
+        <div class="topics-content">
+        <div class="library-welcome" id="library-welcome"><span>EXPLORE · LEARN · BUILD</span><h1>Your next idea starts here.</h1><p>Follow a learning path, explore a concept, or work through a case study. Choose a collection to begin.</p></div>
+        <nav class="topics-breadcrumb" id="topics-breadcrumb" aria-label="Folder path"></nav>
+
+        <section class="topic-preview" id="topic-preview" aria-label="Selected image" hidden>
+          <header class="library-lesson-toolbar"><div><span id="library-step-progress"></span><h2 id="library-lesson-title"></h2></div><nav class="library-top-navigation" aria-label="Lesson navigation"><button class="library-control" id="library-previous" type="button">Previous</button><button class="library-control" id="library-next" type="button">Next</button><button class="library-control" id="library-image-size" type="button" aria-pressed="false">Original size</button></nav></header>
+          <div class="library-image-stage" id="library-image-stage" tabindex="0" aria-label="Lesson image; scroll in original size mode">
+          <img id="topic-preview-image" alt="">
+          </div>
+          <p id="topic-preview-error" role="status" hidden>Unable to display this image. Choose another image or try refreshing.</p>
+        </section>
+        <section class="topic-downloads" id="topic-downloads" aria-label="Downloads" hidden>
+          <h2>Downloads</h2><div id="topic-download-list"></div>
+        </section>
+        <div class="topic-folder-grid" id="topic-folder-grid" aria-label="Folders"></div>
+        <p class="topics-status" id="topics-status" role="status" hidden></p>
+        </div>
+      </section>
       <section class="track-actions" id="career-actions" aria-label="Career roadmap tracks" hidden>
         <button type="button" data-track-image="images/tracks/2_DataTrack.png" data-track-alt="Data Track roadmap">Data Track</button>
         <button type="button" data-track-image="images/tracks/3_MLTrack.png" data-track-alt="Machine Learning Track roadmap">Machine Learning Track</button>
@@ -69,12 +95,16 @@
         <button type="button" data-content-image="images/AI/4-Types_Of_Data.jpg" data-content-alt="Types of data">Types of Data</button>
         <img class="track-overview" id="ai-content-image" src="images/AI/1_AI_Ecosystems.png" alt="Artificial Intelligence ecosystem overview" hidden>
       </section>
-      <section class="deep-learning-viewer" id="deep-learning-viewer" aria-label="Deep Learning lessons" hidden>
-        <header class="viewer-heading"><div><p>Learning Path</p><h2>Deep Learning</h2></div><p class="deep-learning-intro">Choose a topic, then open any lesson or resource.</p></header>
-        <div class="deep-learning-layout">
-          <nav class="deep-learning-tree" id="deep-learning-tree" aria-label="Deep Learning course contents"><p class="deep-learning-loading">Loading course contents…</p></nav>
-          <article class="deep-learning-stage" id="deep-learning-stage" aria-live="polite"><p>Select a lesson from the course contents.</p></article>
-        </div>
+      <section class="algorithm-grid" id="deep-learning-tiles" aria-label="Deep Learning algorithms" hidden>
+        <article class="algorithm-card deep-learning-card ann-card"><span>01</span><div class="deep-learning-symbol ann-symbol" role="img" aria-label="Feed-forward artificial neural network"><i></i><i></i><i></i><b></b><b></b><b></b><b></b><em></em><em></em></div><h3>Artificial Neural Network</h3><div class="algorithm-actions"><button type="button" data-deep-path="ANN|1 Prerequisite">Prerequisite</button><button type="button" data-deep-path="ANN|2 Understand">Core Concepts</button></div></article>
+        <article class="algorithm-card deep-learning-card cnn-card"><span>02</span><div class="deep-learning-symbol cnn-symbol" role="img" aria-label="Convolutional Neural Network filters and feature maps"><i></i><i></i><i></i><b></b><b></b><b></b><em></em><em></em><em></em></div><h3>Convolutional Neural Network</h3><div class="algorithm-actions"><button type="button" data-deep-path="CNN|1 Prerequisite">Prerequisite</button><button type="button" data-deep-path="CNN|2 Understand">Core Concepts</button><button type="button" data-deep-path="CNN|4 UNet Architecture">UNet Architecture</button></div></article>
+        <article class="algorithm-card deep-learning-card rnn-card"><span>03</span><div class="deep-learning-symbol rnn-symbol" role="img" aria-label="Recurrent Neural Network sequence loop"><i></i><i></i><i></i><b></b><b></b><b></b><em></em></div><h3>Recurrent Neural Network</h3><div class="algorithm-actions"><button type="button" data-deep-path="RNN|1 Prerequisite">Prerequisite</button><button type="button" data-deep-path="RNN|2 Understand">Core Concepts</button><button type="button" data-deep-path="RNN|3 ProvideSolutions">Solved Case Studies</button><button type="button" data-deep-path="RNN|4 LSTM">LSTM</button></div></article>
+      </section>
+      <section class="prerequisite-viewer" id="deep-learning-viewer" aria-label="Deep Learning lesson viewer" hidden>
+        <header class="viewer-heading"><div><p id="deep-learning-breadcrumb">Deep Learning</p><h2 id="deep-learning-title">Lesson</h2></div><button type="button" id="back-to-deep-learning">Back to Deep Learning</button></header>
+        <nav class="lesson-nav" id="deep-learning-nav" aria-label="Deep Learning lessons"></nav>
+        <div class="lesson-stage" id="deep-learning-stage"></div>
+        <footer class="lesson-controls"><button type="button" id="previous-deep-learning">Previous</button><span id="deep-learning-progress">0 of 0</span><button type="button" id="next-deep-learning">Next</button></footer>
       </section>
       <section class="learning-tiles" id="machine-learning-tiles" aria-label="Machine Learning categories" hidden>
         <div class="learning-column">
@@ -200,6 +230,6 @@
       <img id="dialog-image" alt="">
     </div>
   </dialog>
-  <script src="script.js?v=deep-learning-3"></script>
+  <script src="script.js?v=library-10"></script>
 </body>
 </html>
