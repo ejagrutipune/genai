@@ -66,6 +66,11 @@ window.genaiAuth = (() => {
       try {
         const user = await verify(sessionStorage.getItem(tokenKey));
         if (user.expires <= Date.now()) return leave();
+        const userLabel = document.querySelector('#logged-in-user');
+        if (userLabel) {
+          userLabel.textContent = user.name;
+          userLabel.title = user.name;
+        }
         document.documentElement.setAttribute('data-authenticated', 'true');
         expiryTimer = setTimeout(leave, Math.min(user.expires - Date.now(), 2147483647));
       } catch {

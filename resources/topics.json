@@ -16,6 +16,29 @@
       ]
     },
     {
+      "name": "Calculas",
+      "path": "topics/Calculas",
+      "folders": [],
+      "files": [
+        {
+          "name": "ChainRules_Derivative.jpg",
+          "path": "topics/Calculas/ChainRules_Derivative.jpg"
+        },
+        {
+          "name": "Derivative.png",
+          "path": "topics/Calculas/Derivative.png"
+        },
+        {
+          "name": "Slope_Of_A_Line.png",
+          "path": "topics/Calculas/Slope_Of_A_Line.png"
+        },
+        {
+          "name": "Types_Of_Data.jpg",
+          "path": "topics/Calculas/Types_Of_Data.jpg"
+        }
+      ]
+    },
+    {
       "name": "Career Roadmap",
       "path": "topics/Career Roadmap",
       "folders": [],
@@ -39,6 +62,514 @@
         {
           "name": "5_PlatformAndInfrastructure_Track.png",
           "path": "topics/Career Roadmap/5_PlatformAndInfrastructure_Track.png"
+        }
+      ]
+    },
+    {
+      "name": "Deep_Learning",
+      "path": "topics/Deep_Learning",
+      "folders": [
+        {
+          "name": "ANN",
+          "path": "topics/Deep_Learning/ANN",
+          "folders": [
+            {
+              "name": "1_Prerequisite",
+              "path": "topics/Deep_Learning/ANN/1_Prerequisite",
+              "folders": [],
+              "files": [
+                {
+                  "name": "Embedding1.png",
+                  "path": "topics/Deep_Learning/ANN/1_Prerequisite/Embedding1.png"
+                },
+                {
+                  "name": "Understand_Chain_Rule.jpg",
+                  "path": "topics/Deep_Learning/ANN/1_Prerequisite/Understand_Chain_Rule.jpg"
+                }
+              ]
+            },
+            {
+              "name": "2_Understand",
+              "path": "topics/Deep_Learning/ANN/2_Understand",
+              "folders": [],
+              "files": [
+                {
+                  "name": "1_ANN.jpg",
+                  "path": "topics/Deep_Learning/ANN/2_Understand/1_ANN.jpg"
+                },
+                {
+                  "name": "2_ANN_Regressor.jpg",
+                  "path": "topics/Deep_Learning/ANN/2_Understand/2_ANN_Regressor.jpg"
+                },
+                {
+                  "name": "3_ANN_Regressor.jpg",
+                  "path": "topics/Deep_Learning/ANN/2_Understand/3_ANN_Regressor.jpg"
+                }
+              ]
+            }
+          ],
+          "files": []
+        },
+        {
+          "name": "CNN",
+          "path": "topics/Deep_Learning/CNN",
+          "folders": [
+            {
+              "name": "1_Prerequisite",
+              "path": "topics/Deep_Learning/CNN/1_Prerequisite",
+              "folders": [],
+              "files": [
+                {
+                  "name": "10_DenseLayer.png",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/10_DenseLayer.png"
+                },
+                {
+                  "name": "11_Cross_Entropy.png",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/11_Cross_Entropy.png"
+                },
+                {
+                  "name": "1_Neuron.png",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/1_Neuron.png"
+                },
+                {
+                  "name": "2.0_How_Convolution_Works.jpg",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/2.0_How_Convolution_Works.jpg"
+                },
+                {
+                  "name": "2.1_How_Convolution_Works.jpg",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/2.1_How_Convolution_Works.jpg"
+                },
+                {
+                  "name": "3_ReLU.png",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/3_ReLU.png"
+                },
+                {
+                  "name": "4_Logit.png",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/4_Logit.png"
+                },
+                {
+                  "name": "5_Sigmoid.png",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/5_Sigmoid.png"
+                },
+                {
+                  "name": "6_CNN_WorkFlow.jpg",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/6_CNN_WorkFlow.jpg"
+                },
+                {
+                  "name": "7_Tanh.png",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/7_Tanh.png"
+                },
+                {
+                  "name": "8_Forward_Backword_Propogation.png",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/8_Forward_Backword_Propogation.png"
+                },
+                {
+                  "name": "9_SoftMax.png",
+                  "path": "topics/Deep_Learning/CNN/1_Prerequisite/9_SoftMax.png"
+                }
+              ]
+            },
+            {
+              "name": "2_Understand",
+              "path": "topics/Deep_Learning/CNN/2_Understand",
+              "folders": [],
+              "files": [
+                {
+                  "name": "1_CNN_Architecture.png",
+                  "path": "topics/Deep_Learning/CNN/2_Understand/1_CNN_Architecture.png"
+                },
+                {
+                  "name": "2_CNN_WorkFlow.png",
+                  "path": "topics/Deep_Learning/CNN/2_Understand/2_CNN_WorkFlow.png"
+                },
+                {
+                  "name": "3_Convolution_Example.png",
+                  "path": "topics/Deep_Learning/CNN/2_Understand/3_Convolution_Example.png"
+                },
+                {
+                  "name": "4_complete_convolution_calculations.xlsx",
+                  "path": "topics/Deep_Learning/CNN/2_Understand/4_complete_convolution_calculations.xlsx"
+                },
+                {
+                  "name": "5_CNN_Basics.pdf",
+                  "path": "topics/Deep_Learning/CNN/2_Understand/5_CNN_Basics.pdf"
+                }
+              ]
+            },
+            {
+              "name": "4_UNet_Architecture",
+              "path": "topics/Deep_Learning/CNN/4_UNet_Architecture",
+              "folders": [],
+              "files": [
+                {
+                  "name": "10_Step15_Step16.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/10_Step15_Step16.jpg"
+                },
+                {
+                  "name": "11_Step17_Step18.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/11_Step17_Step18.jpg"
+                },
+                {
+                  "name": "12_Step19_Step20.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/12_Step19_Step20.jpg"
+                },
+                {
+                  "name": "13_Step21_Step22.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/13_Step21_Step22.jpg"
+                },
+                {
+                  "name": "14_Step23_Step24.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/14_Step23_Step24.jpg"
+                },
+                {
+                  "name": "1_What_is_UNet_Architecture.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/1_What_is_UNet_Architecture.jpg"
+                },
+                {
+                  "name": "2_ProblemStatement.png",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/2_ProblemStatement.png"
+                },
+                {
+                  "name": "3_Step1_Step2.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/3_Step1_Step2.jpg"
+                },
+                {
+                  "name": "4_Step3_Step4.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/4_Step3_Step4.jpg"
+                },
+                {
+                  "name": "5_Step5_Step6.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/5_Step5_Step6.jpg"
+                },
+                {
+                  "name": "6_Step7_Step8.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/6_Step7_Step8.jpg"
+                },
+                {
+                  "name": "7_Step9_Step10.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/7_Step9_Step10.jpg"
+                },
+                {
+                  "name": "8_Step11_Step12.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/8_Step11_Step12.jpg"
+                },
+                {
+                  "name": "9_Step13_Step14.jpg",
+                  "path": "topics/Deep_Learning/CNN/4_UNet_Architecture/9_Step13_Step14.jpg"
+                }
+              ]
+            }
+          ],
+          "files": []
+        },
+        {
+          "name": "RNN",
+          "path": "topics/Deep_Learning/RNN",
+          "folders": [
+            {
+              "name": "1_Prerequisite",
+              "path": "topics/Deep_Learning/RNN/1_Prerequisite",
+              "folders": [],
+              "files": [
+                {
+                  "name": "ChainRule.jpg",
+                  "path": "topics/Deep_Learning/RNN/1_Prerequisite/ChainRule.jpg"
+                },
+                {
+                  "name": "SingleCellRNN.jpg",
+                  "path": "topics/Deep_Learning/RNN/1_Prerequisite/SingleCellRNN.jpg"
+                },
+                {
+                  "name": "What_IS_RNN.png",
+                  "path": "topics/Deep_Learning/RNN/1_Prerequisite/What_IS_RNN.png"
+                }
+              ]
+            },
+            {
+              "name": "2_Understand",
+              "path": "topics/Deep_Learning/RNN/2_Understand",
+              "folders": [
+                {
+                  "name": "Many2One",
+                  "path": "topics/Deep_Learning/RNN/2_Understand/Many2One",
+                  "folders": [
+                    {
+                      "name": "CaseStudy1",
+                      "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "10_Reduce_SSE_Using_BPTT.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/10_Reduce_SSE_Using_BPTT.png"
+                        },
+                        {
+                          "name": "11_After_Many_Iterations.jpg",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/11_After_Many_Iterations.jpg"
+                        },
+                        {
+                          "name": "12_Check_Model_On_ValidationData.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/12_Check_Model_On_ValidationData.png"
+                        },
+                        {
+                          "name": "13_Final_Evaluations.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/13_Final_Evaluations.png"
+                        },
+                        {
+                          "name": "14_Final_RNN_Architecture.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/14_Final_RNN_Architecture.png"
+                        },
+                        {
+                          "name": "1_ProblemStatement.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/1_ProblemStatement.png"
+                        },
+                        {
+                          "name": "2_Data_Normalization.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/2_Data_Normalization.png"
+                        },
+                        {
+                          "name": "3_Understand_Our_Goal.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/3_Understand_Our_Goal.png"
+                        },
+                        {
+                          "name": "4_RNN_Overview.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/4_RNN_Overview.png"
+                        },
+                        {
+                          "name": "5_General_RNN_Architecture.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/5_General_RNN_Architecture.png"
+                        },
+                        {
+                          "name": "6_Unfold_Hidden_Layer.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/6_Unfold_Hidden_Layer.png"
+                        },
+                        {
+                          "name": "7_Identify_Weight_And_Baises.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/7_Identify_Weight_And_Baises.png"
+                        },
+                        {
+                          "name": "8_How_Each_Unfold_Layer_Computes_Value.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/8_How_Each_Unfold_Layer_Computes_Value.png"
+                        },
+                        {
+                          "name": "9_Identify_Diff_Between_TargetVsPredicted_Value.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/Many2One/CaseStudy1/9_Identify_Diff_Between_TargetVsPredicted_Value.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "files": []
+                },
+                {
+                  "name": "One2Many",
+                  "path": "topics/Deep_Learning/RNN/2_Understand/One2Many",
+                  "folders": [
+                    {
+                      "name": "CaseStudy1",
+                      "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "10_Predict_First_Output_Word.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/10_Predict_First_Output_Word.png"
+                        },
+                        {
+                          "name": "11_Feed_Predicted_Word_Back2RNN.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/11_Feed_Predicted_Word_Back2RNN.png"
+                        },
+                        {
+                          "name": "12_Cal_HiddenLayer1_ForWord_IS.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/12_Cal_HiddenLayer1_ForWord_IS.png"
+                        },
+                        {
+                          "name": "13_Calculate_Hidden_Layer2_Again_For_Is.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/13_Calculate_Hidden_Layer2_Again_For_Is.png"
+                        },
+                        {
+                          "name": "14_Predict_Second_Output_Word.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/14_Predict_Second_Output_Word.png"
+                        },
+                        {
+                          "name": "15_Feed_Approved_Back2RNN.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/15_Feed_Approved_Back2RNN.png"
+                        },
+                        {
+                          "name": "16_Calculate_HiddenLayer1&2_For_Approved.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/16_Calculate_HiddenLayer1&2_For_Approved.png"
+                        },
+                        {
+                          "name": "17_Predict_Third_Output_Word_RNN.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/17_Predict_Third_Output_Word_RNN.png"
+                        },
+                        {
+                          "name": "18_Cal_HiddenLayer1&2_For_After.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/18_Cal_HiddenLayer1&2_For_After.png"
+                        },
+                        {
+                          "name": "19_Predict_Final_Output_Word.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/19_Predict_Final_Output_Word.png"
+                        },
+                        {
+                          "name": "1_RNN_ProblemStatement.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/1_RNN_ProblemStatement.png"
+                        },
+                        {
+                          "name": "20_Calculate_Cross_Entropy_Loss.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/20_Calculate_Cross_Entropy_Loss.png"
+                        },
+                        {
+                          "name": "21_Update_Weights_Bais.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/21_Update_Weights_Bais.png"
+                        },
+                        {
+                          "name": "22_Update_HiddenLayer2.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/22_Update_HiddenLayer2.png"
+                        },
+                        {
+                          "name": "23_FinalSummary.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/23_FinalSummary.png"
+                        },
+                        {
+                          "name": "2_Given_Sample_Data.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/2_Given_Sample_Data.png"
+                        },
+                        {
+                          "name": "3_RNN_Architecture.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/3_RNN_Architecture.png"
+                        },
+                        {
+                          "name": "4_Create_Vocabulary_&_Word_Index.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/4_Create_Vocabulary_&_Word_Index.png"
+                        },
+                        {
+                          "name": "5_Create_Embedding_Vectors.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/5_Create_Embedding_Vectors.png"
+                        },
+                        {
+                          "name": "6_Decide_RNN_Model.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/6_Decide_RNN_Model.png"
+                        },
+                        {
+                          "name": "7_Initialize_Weight_&_Bias_HiddenLayer1.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/7_Initialize_Weight_&_Bias_HiddenLayer1.png"
+                        },
+                        {
+                          "name": "8_Calculate_HiddenLayer1_Output.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/8_Calculate_HiddenLayer1_Output.png"
+                        },
+                        {
+                          "name": "9_Calculate_HiddenLayer2_Output.png",
+                          "path": "topics/Deep_Learning/RNN/2_Understand/One2Many/CaseStudy1/9_Calculate_HiddenLayer2_Output.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "files": []
+                }
+              ],
+              "files": []
+            },
+            {
+              "name": "3_ProvideSolutions",
+              "path": "topics/Deep_Learning/RNN/3_ProvideSolutions",
+              "folders": [],
+              "files": [
+                {
+                  "name": "1_RNN_Tasks.jpg",
+                  "path": "topics/Deep_Learning/RNN/3_ProvideSolutions/1_RNN_Tasks.jpg"
+                }
+              ]
+            },
+            {
+              "name": "4_LSTM",
+              "path": "topics/Deep_Learning/RNN/4_LSTM",
+              "folders": [
+                {
+                  "name": "1_Prerequisite",
+                  "path": "topics/Deep_Learning/RNN/4_LSTM/1_Prerequisite",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "1_Vanishing_Gradient_Problem.jpg",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/1_Prerequisite/1_Vanishing_Gradient_Problem.jpg"
+                    },
+                    {
+                      "name": "2_About_LSTM.jpg",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/1_Prerequisite/2_About_LSTM.jpg"
+                    },
+                    {
+                      "name": "3_Forget_Gate_In_LSTM.jpg",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/1_Prerequisite/3_Forget_Gate_In_LSTM.jpg"
+                    },
+                    {
+                      "name": "4_Output_Gate_In_LSTM.jpg",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/1_Prerequisite/4_Output_Gate_In_LSTM.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "2_Understand",
+                  "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "1_Understand_LSTM_Cell_In_RNN.png",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand/1_Understand_LSTM_Cell_In_RNN.png"
+                    },
+                    {
+                      "name": "2_LSTM_With_2Hidden_Layers_With_SingleNeuron.png",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand/2_LSTM_With_2Hidden_Layers_With_SingleNeuron.png"
+                    },
+                    {
+                      "name": "3_LSTM_With_2HiddenLayers_With_MultiNeurons.png",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand/3_LSTM_With_2HiddenLayers_With_MultiNeurons.png"
+                    },
+                    {
+                      "name": "4_How_Calculate_Weight_And_Bias.png",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand/4_How_Calculate_Weight_And_Bias.png"
+                    },
+                    {
+                      "name": "5_Understand_Forget_Gate.png",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand/5_Understand_Forget_Gate.png"
+                    },
+                    {
+                      "name": "6_Understand_Input_Gate.png",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand/6_Understand_Input_Gate.png"
+                    },
+                    {
+                      "name": "7_Understand_Candidate_Value.png",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand/7_Understand_Candidate_Value.png"
+                    },
+                    {
+                      "name": "8_Understand_Output_Gate.png",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand/8_Understand_Output_Gate.png"
+                    },
+                    {
+                      "name": "9_Complete_LSTM_Flow.png",
+                      "path": "topics/Deep_Learning/RNN/4_LSTM/2_Understand/9_Complete_LSTM_Flow.png"
+                    }
+                  ]
+                }
+              ],
+              "files": []
+            }
+          ],
+          "files": []
+        }
+      ],
+      "files": []
+    },
+    {
+      "name": "Linear_Algebra",
+      "path": "topics/Linear_Algebra",
+      "folders": [],
+      "files": [
+        {
+          "name": "Derivative&ChainRules.ejagruti",
+          "path": "topics/Linear_Algebra/Derivative&ChainRules.ejagruti"
+        },
+        {
+          "name": "MatrixDotProducts.jpg",
+          "path": "topics/Linear_Algebra/MatrixDotProducts.jpg"
         }
       ]
     },
@@ -741,6 +1272,438 @@
         }
       ],
       "files": []
+    },
+    {
+      "name": "NLP",
+      "path": "topics/NLP",
+      "folders": [
+        {
+          "name": "TRANSFORMER",
+          "path": "topics/NLP/TRANSFORMER",
+          "folders": [
+            {
+              "name": "1_Understanding",
+              "path": "topics/NLP/TRANSFORMER/1_Understanding",
+              "folders": [],
+              "files": [
+                {
+                  "name": "1_Transformer_Part1.png",
+                  "path": "topics/NLP/TRANSFORMER/1_Understanding/1_Transformer_Part1.png"
+                },
+                {
+                  "name": "2_Transformer_Part2.png",
+                  "path": "topics/NLP/TRANSFORMER/1_Understanding/2_Transformer_Part2.png"
+                },
+                {
+                  "name": "3_Transformer_Part3.png",
+                  "path": "topics/NLP/TRANSFORMER/1_Understanding/3_Transformer_Part3.png"
+                },
+                {
+                  "name": "4_Transformer_Part4.png",
+                  "path": "topics/NLP/TRANSFORMER/1_Understanding/4_Transformer_Part4.png"
+                },
+                {
+                  "name": "5_Why_Layer_Normalization.png",
+                  "path": "topics/NLP/TRANSFORMER/1_Understanding/5_Why_Layer_Normalization.png"
+                },
+                {
+                  "name": "6_Transformer_Part5.png",
+                  "path": "topics/NLP/TRANSFORMER/1_Understanding/6_Transformer_Part5.png"
+                },
+                {
+                  "name": "7_Transformer_Part6.png",
+                  "path": "topics/NLP/TRANSFORMER/1_Understanding/7_Transformer_Part6.png"
+                }
+              ]
+            }
+          ],
+          "files": []
+        }
+      ],
+      "files": []
+    },
+    {
+      "name": "OpenCV",
+      "path": "topics/OpenCV",
+      "folders": [
+        {
+          "name": "1_Understand",
+          "path": "topics/OpenCV/1_Understand",
+          "folders": [],
+          "files": [
+            {
+              "name": "1_OpenCV_Part1.png",
+              "path": "topics/OpenCV/1_Understand/1_OpenCV_Part1.png"
+            },
+            {
+              "name": "2_OpenCV_Part2.png",
+              "path": "topics/OpenCV/1_Understand/2_OpenCV_Part2.png"
+            },
+            {
+              "name": "3_OpenCV_Part3.png",
+              "path": "topics/OpenCV/1_Understand/3_OpenCV_Part3.png"
+            },
+            {
+              "name": "4_OpenCV_Part4.png",
+              "path": "topics/OpenCV/1_Understand/4_OpenCV_Part4.png"
+            },
+            {
+              "name": "ComputerVision.ipynb",
+              "path": "topics/OpenCV/1_Understand/ComputerVision.ipynb"
+            }
+          ]
+        }
+      ],
+      "files": []
+    },
+    {
+      "name": "Others",
+      "path": "topics/Others",
+      "folders": [],
+      "files": [
+        {
+          "name": "Bias_Variance_TradeOff.jpg",
+          "path": "topics/Others/Bias_Variance_TradeOff.jpg"
+        },
+        {
+          "name": "Core_Fundamental_Concepts.pdf",
+          "path": "topics/Others/Core_Fundamental_Concepts.pdf"
+        },
+        {
+          "name": "GradientDescent.pdf",
+          "path": "topics/Others/GradientDescent.pdf"
+        },
+        {
+          "name": "HowGradientDescentWorks.xlsx",
+          "path": "topics/Others/HowGradientDescentWorks.xlsx"
+        },
+        {
+          "name": "LogisticRegressionBasics_for_binary_data.xlsx",
+          "path": "topics/Others/LogisticRegressionBasics_for_binary_data.xlsx"
+        },
+        {
+          "name": "LossFunction.jpg",
+          "path": "topics/Others/LossFunction.jpg"
+        },
+        {
+          "name": "ReinforcementLearning.jpg",
+          "path": "topics/Others/ReinforcementLearning.jpg"
+        },
+        {
+          "name": "UnSupervisedLearning.jpg",
+          "path": "topics/Others/UnSupervisedLearning.jpg"
+        },
+        {
+          "name": "What_is_Decoder.jpg",
+          "path": "topics/Others/What_is_Decoder.jpg"
+        },
+        {
+          "name": "What_is_Encoder.jpg",
+          "path": "topics/Others/What_is_Encoder.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Sample_Code",
+      "path": "topics/Sample_Code",
+      "folders": [
+        {
+          "name": "NumPy",
+          "path": "topics/Sample_Code/NumPy",
+          "folders": [],
+          "files": [
+            {
+              "name": "3-Working_With_Arrays.png",
+              "path": "topics/Sample_Code/NumPy/3-Working_With_Arrays.png"
+            },
+            {
+              "name": "NumPy.ejagruti",
+              "path": "topics/Sample_Code/NumPy/NumPy.ejagruti"
+            }
+          ]
+        },
+        {
+          "name": "OpenCV",
+          "path": "topics/Sample_Code/OpenCV",
+          "folders": [],
+          "files": [
+            {
+              "name": "ComputerVision1.ipynb",
+              "path": "topics/Sample_Code/OpenCV/ComputerVision1.ipynb"
+            },
+            {
+              "name": "VideoProcessing.py",
+              "path": "topics/Sample_Code/OpenCV/VideoProcessing.py"
+            }
+          ]
+        },
+        {
+          "name": "Pandas",
+          "path": "topics/Sample_Code/Pandas",
+          "folders": [],
+          "files": [
+            {
+              "name": "10_Adv_Pandas_Operations_Part1.png",
+              "path": "topics/Sample_Code/Pandas/10_Adv_Pandas_Operations_Part1.png"
+            },
+            {
+              "name": "11_Adv_Pandas_Operations_Part2.png",
+              "path": "topics/Sample_Code/Pandas/11_Adv_Pandas_Operations_Part2.png"
+            },
+            {
+              "name": "12_Time_Series_Analysis.png",
+              "path": "topics/Sample_Code/Pandas/12_Time_Series_Analysis.png"
+            },
+            {
+              "name": "1_Series.png",
+              "path": "topics/Sample_Code/Pandas/1_Series.png"
+            },
+            {
+              "name": "2_Read_DataFrame.png",
+              "path": "topics/Sample_Code/Pandas/2_Read_DataFrame.png"
+            },
+            {
+              "name": "3_Exploring_And_Selecting_Data.png",
+              "path": "topics/Sample_Code/Pandas/3_Exploring_And_Selecting_Data.png"
+            },
+            {
+              "name": "4_Sorting_Cleaning_Data.png",
+              "path": "topics/Sample_Code/Pandas/4_Sorting_Cleaning_Data.png"
+            },
+            {
+              "name": "5_DataTransformation_GroupBy.png",
+              "path": "topics/Sample_Code/Pandas/5_DataTransformation_GroupBy.png"
+            },
+            {
+              "name": "6_Join_Merge_PivotTable.png",
+              "path": "topics/Sample_Code/Pandas/6_Join_Merge_PivotTable.png"
+            },
+            {
+              "name": "7_DateTime_&_String_Operations.png",
+              "path": "topics/Sample_Code/Pandas/7_DateTime_&_String_Operations.png"
+            },
+            {
+              "name": "8_Categorical_Data_&_WinFunctions.png",
+              "path": "topics/Sample_Code/Pandas/8_Categorical_Data_&_WinFunctions.png"
+            },
+            {
+              "name": "9_DataVisualization_&_PerformanceOptimization.png",
+              "path": "topics/Sample_Code/Pandas/9_DataVisualization_&_PerformanceOptimization.png"
+            },
+            {
+              "name": "Pandas.ejagruti",
+              "path": "topics/Sample_Code/Pandas/Pandas.ejagruti"
+            }
+          ]
+        },
+        {
+          "name": "Python",
+          "path": "topics/Sample_Code/Python",
+          "folders": [],
+          "files": [
+            {
+              "name": "1-DataTypes_Statements_Loop.png",
+              "path": "topics/Sample_Code/Python/1-DataTypes_Statements_Loop.png"
+            },
+            {
+              "name": "2-StringOperations.png",
+              "path": "topics/Sample_Code/Python/2-StringOperations.png"
+            },
+            {
+              "name": "3-Arrays.png",
+              "path": "topics/Sample_Code/Python/3-Arrays.png"
+            },
+            {
+              "name": "4-Dictionary.png",
+              "path": "topics/Sample_Code/Python/4-Dictionary.png"
+            },
+            {
+              "name": "5_Class_Objects_Methods.png",
+              "path": "topics/Sample_Code/Python/5_Class_Objects_Methods.png"
+            },
+            {
+              "name": "6_Tuples_And_List.png",
+              "path": "topics/Sample_Code/Python/6_Tuples_And_List.png"
+            },
+            {
+              "name": "7_FileSystemObject_P1.png",
+              "path": "topics/Sample_Code/Python/7_FileSystemObject_P1.png"
+            },
+            {
+              "name": "8_FileSystemObject_P2.png",
+              "path": "topics/Sample_Code/Python/8_FileSystemObject_P2.png"
+            },
+            {
+              "name": "9_FileSystemObject_P3.png",
+              "path": "topics/Sample_Code/Python/9_FileSystemObject_P3.png"
+            },
+            {
+              "name": "Python.ejagruti",
+              "path": "topics/Sample_Code/Python/Python.ejagruti"
+            }
+          ]
+        },
+        {
+          "name": "Visualization",
+          "path": "topics/Sample_Code/Visualization",
+          "folders": [],
+          "files": [
+            {
+              "name": "MatPlotLib.jpg",
+              "path": "topics/Sample_Code/Visualization/MatPlotLib.jpg"
+            },
+            {
+              "name": "Plotly.jpg",
+              "path": "topics/Sample_Code/Visualization/Plotly.jpg"
+            },
+            {
+              "name": "Seaborn.jpg",
+              "path": "topics/Sample_Code/Visualization/Seaborn.jpg"
+            }
+          ]
+        }
+      ],
+      "files": []
+    },
+    {
+      "name": "Sample_Data",
+      "path": "topics/Sample_Data",
+      "folders": [
+        {
+          "name": "handwritten_digits",
+          "path": "topics/Sample_Data/handwritten_digits",
+          "folders": [],
+          "files": [
+            {
+              "name": "2_bab_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/2_bab_20x20_grayscale.png"
+            },
+            {
+              "name": "2_dhr_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/2_dhr_20x20_grayscale.png"
+            },
+            {
+              "name": "2_jag_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/2_jag_20x20_grayscale.png"
+            },
+            {
+              "name": "2_mns_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/2_mns_20x20_grayscale.png"
+            },
+            {
+              "name": "2_nha_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/2_nha_20x20_grayscale.png"
+            },
+            {
+              "name": "2_rch_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/2_rch_20x20_grayscale.png"
+            },
+            {
+              "name": "2_sum_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/2_sum_20x20_grayscale.png"
+            },
+            {
+              "name": "4_bab_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/4_bab_20x20_grayscale.png"
+            },
+            {
+              "name": "4_dhr_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/4_dhr_20x20_grayscale.png"
+            },
+            {
+              "name": "4_jag_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/4_jag_20x20_grayscale.png"
+            },
+            {
+              "name": "4_mns_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/4_mns_20x20_grayscale.png"
+            },
+            {
+              "name": "4_nha_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/4_nha_20x20_grayscale.png"
+            },
+            {
+              "name": "4_rch_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/4_rch_20x20_grayscale.png"
+            },
+            {
+              "name": "4_sum_20x20_grayscale.png",
+              "path": "topics/Sample_Data/handwritten_digits/4_sum_20x20_grayscale.png"
+            }
+          ]
+        }
+      ],
+      "files": []
+    },
+    {
+      "name": "Setup",
+      "path": "topics/Setup",
+      "folders": [],
+      "files": [
+        {
+          "name": "CodingViaJupyterNotebook.pdf",
+          "path": "topics/Setup/CodingViaJupyterNotebook.pdf"
+        },
+        {
+          "name": "Python_Using_Google_Colab.pdf",
+          "path": "topics/Setup/Python_Using_Google_Colab.pdf"
+        },
+        {
+          "name": "Visual_Studio_Code.pdf",
+          "path": "topics/Setup/Visual_Studio_Code.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Statistics",
+      "path": "topics/Statistics",
+      "folders": [],
+      "files": [
+        {
+          "name": "Binomial_Distribution.png",
+          "path": "topics/Statistics/Binomial_Distribution.png"
+        },
+        {
+          "name": "Euclidean_Distance.jpg",
+          "path": "topics/Statistics/Euclidean_Distance.jpg"
+        },
+        {
+          "name": "HypothesisTesting.pdf",
+          "path": "topics/Statistics/HypothesisTesting.pdf"
+        },
+        {
+          "name": "Logit.png",
+          "path": "topics/Statistics/Logit.png"
+        },
+        {
+          "name": "Mean_Median_Mode.png",
+          "path": "topics/Statistics/Mean_Median_Mode.png"
+        },
+        {
+          "name": "PoissonDistribution.png",
+          "path": "topics/Statistics/PoissonDistribution.png"
+        },
+        {
+          "name": "ProbabilityVsMaximumLikelihood-Part1.png",
+          "path": "topics/Statistics/ProbabilityVsMaximumLikelihood-Part1.png"
+        },
+        {
+          "name": "ProbabilityVsMaximumLikelihood-Part2.png",
+          "path": "topics/Statistics/ProbabilityVsMaximumLikelihood-Part2.png"
+        },
+        {
+          "name": "ProbabilityVsMaximumLikelihood-Part3.png",
+          "path": "topics/Statistics/ProbabilityVsMaximumLikelihood-Part3.png"
+        },
+        {
+          "name": "Standard_Deviation.png",
+          "path": "topics/Statistics/Standard_Deviation.png"
+        },
+        {
+          "name": "Statistics.pdf",
+          "path": "topics/Statistics/Statistics.pdf"
+        }
+      ]
     }
   ]
 }

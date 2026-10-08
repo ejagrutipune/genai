@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>eJagruti | Path to GenAI Development</title>
-  <link rel="stylesheet" href="styles.css?v=library-10">
+  <link rel="stylesheet" href="styles.css?v=logo-fit-18">
   <style>html:not([data-authenticated]) body { display: none; }</style>
-  <script src="js/auth.js" defer></script>
+  <script src="js/auth.js?v=user-header-17" defer></script>
   <noscript><meta http-equiv="refresh" content="0; url=index.html"></noscript>
 </head>
 <body class="library-page">
@@ -21,11 +21,16 @@
           <span class="brand-tagline">Awaken ideas. Build intelligence.</span>
         </span>
       </div>
+      <span class="header-user" id="logged-in-user" aria-label="Logged-in user"></span>
       <a class="header-link" id="logout-link" href="index.html">Logout</a>
     </header>
     <nav class="ejmenu" aria-label="Main navigation">
+      <button class="menu-scroll-button" id="menu-scroll-left" type="button" aria-label="Show previous topics" aria-controls="menu-scroll-track">&#8249;</button>
+      <div class="menu-scroll-track" id="menu-scroll-track">
       <button class="menu-button active" id="home-button" type="button">Home</button>
       <div class="topic-menu" id="topic-menu" aria-label="Topics"></div>
+      </div>
+      <button class="menu-scroll-button" id="menu-scroll-right" type="button" aria-label="Show more topics" aria-controls="menu-scroll-track">&#8250;</button>
       <button class="library-control" id="topic-sidebar-toggle" type="button" aria-expanded="true" aria-controls="topic-sidebar" hidden>Contents</button>
       <button class="topics-back" id="topics-back" type="button" hidden>Back</button>
       <button class="menu-button" id="career-roadmap-button" type="button" aria-expanded="false" aria-controls="career-actions" hidden>Career Roadmap</button>
@@ -39,15 +44,15 @@
     </nav>
     <main class="ejcanvas">
       <section class="topics-browser" id="topics-browser" aria-label="Topic contents" hidden>
-        <aside class="topics-sidebar" id="topic-sidebar" aria-label="Image selection">
+        <aside class="topics-sidebar" id="topic-sidebar" aria-label="Resource selection">
           <div class="library-sidebar-heading">Course contents<span>Explore folders and lessons</span></div>
-          <div class="topic-file-list" id="topic-file-list" aria-label="Images"></div>
+          <div class="topic-file-list" id="topic-file-list" aria-label="Learning resources"></div>
         </aside>
         <div class="topics-content">
         <div class="library-welcome" id="library-welcome"><span>EXPLORE · LEARN · BUILD</span><h1>Your next idea starts here.</h1><p>Follow a learning path, explore a concept, or work through a case study. Choose a collection to begin.</p></div>
         <nav class="topics-breadcrumb" id="topics-breadcrumb" aria-label="Folder path"></nav>
 
-        <section class="topic-preview" id="topic-preview" aria-label="Selected image" hidden>
+        <section class="topic-preview" id="topic-preview" aria-label="Selected resource" hidden>
           <header class="library-lesson-toolbar"><div><span id="library-step-progress"></span><h2 id="library-lesson-title"></h2></div><nav class="library-top-navigation" aria-label="Lesson navigation"><button class="library-control" id="library-previous" type="button">Previous</button><button class="library-control" id="library-next" type="button">Next</button><button class="library-control" id="library-image-size" type="button" aria-pressed="false">Original size</button></nav></header>
           <div class="library-image-stage" id="library-image-stage" tabindex="0" aria-label="Lesson image; scroll in original size mode">
           <img id="topic-preview-image" alt="">
@@ -230,6 +235,6 @@
       <img id="dialog-image" alt="">
     </div>
   </dialog>
-  <script src="script.js?v=library-10"></script>
+  <script src="script.js?v=menu-arrows-16"></script>
 </body>
 </html>

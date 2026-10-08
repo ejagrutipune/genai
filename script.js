@@ -619,19 +619,92 @@ function isTopicImage(file) {
   return /\.(png|jpe?g|gif|webp|svg|avif|bmp|ico)$/i.test(file.name);
 }
 
+function isTopicPreviewable(file) {
+  return isTopicImage(file) || /\.(pdf|csv|txt)$/i.test(file.name);
+}
+
+let topicPreviewRequest = 0;
+
+function parseTopicCsv(text) {
+  const rows = [];
+  let row = [], field = '', quoted = false;
+  text = text.replace(/^\uFEFF/, '');
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    if (char === '"') {
+      if (quoted && text[i + 1] === '"') { field += '"'; i++; }
+      else quoted = !quoted;
+    } else if (char === ',' && !quoted) { row.push(field); field = ''; }
+    else if ((char === '\n' || char === '\r') && !quoted) {
+      if (char === '\r' && text[i + 1] === '\n') i++;
+      row.push(field); rows.push(row); row = []; field = '';
+    } else field += char;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
 function orderedTopicItems(items) {
   return [...items].sort((a, b) => topicOrder.compare(a.name, b.name));
 }
 
 function topicThumbnail(folder) {
-  const images = orderedTopicItems(folder.files).filter(isTopicImage);
-  const direct = images.find((file) => /thumbnail|cover/i.test(file.name)) || images[0];
-  if (direct) return direct;
-  for (const child of orderedTopicItems(folder.folders)) {
-    const nested = topicThumbnail(child);
-    if (nested) return nested;
+  const learningTypes = {
+    'Supervised Machine Learning': 'supervised',
+    'Unsupervised Machine Learning': 'unsupervised',
+    'Reinforcement Machine Learning': 'reinforcement',
+  };
+  const learningType = learningTypes[folder.name];
+  if (learningType && folder.path.startsWith('topics/Machine Learning/')) {
+    return { name: `${learningType}.svg`, path: `images/ml-types/${learningType}.svg` };
   }
-  return null;
+  return { name: 'topic-illustration.svg', path: topicIllustration(folder) };
+}
+
+function topicIllustration(folder) {
+  const path = folder.path.toLowerCase();
+  const name = folder.name.toLowerCase();
+  const escape = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[char]));
+  const motifs = {
+    network: '<path d="M160 95L290 75L425 105M160 95L290 145L425 105M160 195L290 75M160 195L290 145L425 195M160 95L290 215L425 195M160 195L290 215"/><g fill="#7dd3fc"><circle cx="160" cy="95" r="13"/><circle cx="160" cy="195" r="13"/><circle cx="290" cy="75" r="13"/><circle cx="290" cy="145" r="13"/><circle cx="290" cy="215" r="13"/><circle cx="425" cy="105" r="13"/><circle cx="425" cy="195" r="13"/></g>',
+    chart: '<path d="M150 65V220H455M175 200L220 165L265 170L310 115L365 100L425 65"/><g fill="#7dd3fc"><circle cx="185" cy="185" r="7"/><circle cx="235" cy="185" r="7"/><circle cx="275" cy="142" r="7"/><circle cx="335" cy="130" r="7"/><circle cx="395" cy="75" r="7"/></g>',
+    clusters: '<g fill="#7dd3fc"><circle cx="185" cy="90" r="9"/><circle cx="215" cy="110" r="9"/><circle cx="180" cy="135" r="9"/><circle cx="220" cy="155" r="9"/></g><g fill="#f4c95d"><circle cx="365" cy="85" r="9"/><circle cx="400" cy="115" r="9"/><circle cx="375" cy="145" r="9"/></g><g fill="#a7e3c1"><circle cx="275" cy="180" r="9"/><circle cx="315" cy="200" r="9"/><circle cx="280" cy="220" r="9"/></g>',
+    matrix: '<path d="M185 65H165V220H185M410 65H430V220H410"/><g fill="#7dd3fc" stroke="none">'+Array.from({length:12},(_,i)=>`<rect x="${200+i%4*50}" y="${80+Math.floor(i/4)*50}" width="28" height="28" rx="5" opacity="${.4+(i%3)*.25}"/>`).join('')+'</g>',
+    code: '<rect x="140" y="55" width="320" height="175" rx="14"/><path d="M140 90H460M220 125L190 150L220 175M380 125L410 150L380 175M320 115L280 190"/><circle cx="160" cy="73" r="3"/><circle cx="177" cy="73" r="3"/>',
+    document: '<path d="M210 55H345L395 105V230H210ZM345 55V105H395M240 140H365M240 170H365M240 200H325"/>',
+    roadmap: '<path d="M170 210V170H255V125H340V80H425"/><circle cx="170" cy="210" r="12"/><circle cx="255" cy="170" r="12"/><circle cx="340" cy="125" r="12"/><path d="M425 60V105M425 60H465L425 85"/>',
+    setup: '<rect x="165" y="60" width="270" height="150" rx="12"/><path d="M265 210V235H335V210M235 235H365M275 120L295 140L330 100"/>',
+    language: '<rect x="145" y="65" width="210" height="95" rx="16"/><path d="M175 160V185L210 160M180 95H315M180 125H280"/><rect x="310" y="145" width="145" height="65" rx="12"/><path d="M340 170H425M340 190H405"/>',
+    vision: '<rect x="155" y="65" width="290" height="155" rx="12"/><path d="M190 100H220M190 100V125M410 100H380M410 100V125M190 185H220M190 185V160M410 185H380M410 185V160"/><circle cx="300" cy="143" r="38"/><circle cx="300" cy="143" r="14"/>',
+    book: '<path d="M300 85Q235 45 155 75V215Q235 185 300 225Q365 185 445 215V75Q365 45 300 85V225M180 110L270 120M180 145L270 155M330 120L420 110M330 155L420 145"/>',
+    task: '<rect x="190" y="60" width="220" height="180" rx="12"/><path d="M220 105L230 115L250 90M270 105H375M220 155L230 165L250 140M270 155H375M220 205L230 215L250 190M270 205H350"/>',
+    loop: '<rect x="145" y="105" width="110" height="80" rx="12"/><rect x="345" y="105" width="110" height="80" rx="12"/><path d="M200 95V65H400V95M400 195V230H200V195M390 85L400 95L410 85M190 205L200 195L210 205"/>',
+    curve: '<path d="M145 65V225H455M165 205Q230 210 270 145T435 85"/>',
+  };
+  let motif = 'book', caption = 'Explore concepts and learning resources';
+  if (/prerequisite/.test(name)) { motif='book'; caption='Build the foundations'; }
+  else if (/task|providesolutions/.test(name)) { motif='task'; caption='Practice and solve problems'; }
+  else if (/case.?study/.test(name)) { motif='document'; caption='Work through a real example'; }
+  else if (/setup/.test(path)) { motif='setup'; caption='Prepare your development workspace'; }
+  else if (/career/.test(path)) { motif='roadmap'; caption='Plan your learning journey'; }
+  else if (/sample_data|handwritten/.test(path)) { motif='matrix'; caption='Explore datasets and examples'; }
+  else if (/opencv|cnn|unet/.test(path)) { motif='vision'; caption='Images, features and visual patterns'; }
+  else if (/nlp|transformer/.test(path)) { motif='language'; caption='Language, context and attention'; }
+  else if (/numpy|linear_algebra/.test(path)) { motif='matrix'; caption='Arrays, matrices and vector operations'; }
+  else if (/pandas/.test(path)) { motif='matrix'; caption='Organize and analyze tabular data'; }
+  else if (/visualization|statistics/.test(path)) { motif='chart'; caption='Understand data and distributions'; }
+  else if (/sample_code|python/.test(path)) { motif='code'; caption='Learn through working code'; }
+  else if (/calcul/.test(path)) { motif='curve'; caption='Change, slopes and derivatives'; }
+  else if (/kmeans|knn/.test(path)) { motif='clusters'; caption=/knn/.test(path)?'Learn from nearby examples':'Discover groups in data'; }
+  else if (/logistic/.test(path)) { motif='curve'; caption='Predict class probabilities'; }
+  else if (/mlr|slr/.test(path)) { motif='chart'; caption='Model relationships and predict values'; }
+  else if (/rnn|lstm/.test(path)) { motif='loop'; caption='Learn from sequences and memory'; }
+  else if (/machine learning/.test(path)) { motif='chart'; caption='Learn patterns and make predictions'; }
+  else if (/deep_learning|ann|\/ai$/.test(path)) { motif='network'; caption='Connected intelligence and learning'; }
+  const label = topicLabel(folder.name);
+  const size = label.length > 32 ? 15 : 20;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300"><rect width="600" height="300" rx="20" fill="#102944"/><g fill="none" stroke="#f4c95d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">${motifs[motif]}</g><rect width="600" height="42" fill="#102944"/><g font-family="Arial,sans-serif" text-anchor="middle"><text x="300" y="30" fill="#edf3fa" font-size="${size}" font-weight="bold">${escape(label)}</text><text x="300" y="278" fill="#a9b9cc" font-size="14">${escape(caption)}</text></g></svg>`;
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
 }
 
 function createTopicTile(folder, path) {
@@ -669,6 +742,8 @@ function createTopicPlaceholder() {
 }
 
 function resetTopicResources() {
+  topicPreviewRequest++;
+  document.querySelector('#topic-document-preview')?.remove();
   topicFileList.replaceChildren();
   topicDownloadList.replaceChildren();
   topicDownloads.hidden = true;
@@ -677,7 +752,12 @@ function resetTopicResources() {
   topicPreviewError.hidden = true;
 }
 
-function showTopicImage(file, selectedButton) {
+async function showTopicImage(file, selectedButton) {
+  const request = ++topicPreviewRequest;
+  document.querySelector('#topic-document-preview')?.remove();
+  topicPreview.dataset.filePath = file.path;
+  librarySize.hidden = !isTopicImage(file);
+  if (!isTopicImage(file)) topicPreview.classList.remove('original-size');
   activeTopicImageIndex = activeTopicImages.findIndex((item) => item.path === file.path);
   document.querySelector('#library-lesson-title').textContent = topicLabel(file.name);
   document.querySelector('#library-step-progress').textContent = `LESSON ${activeTopicImageIndex + 1} OF ${activeTopicImages.length}`;
@@ -692,7 +772,51 @@ function showTopicImage(file, selectedButton) {
     button.setAttribute('aria-pressed', String(active));
   });
   topicPreviewError.hidden = true;
-  topicPreviewImage.hidden = false;
+  topicPreviewImage.hidden = !isTopicImage(file);
+  topicPreview.hidden = false;
+  if (!isTopicImage(file)) {
+    topicPreviewImage.removeAttribute('src');
+    const preview = document.createElement('div');
+    preview.id = 'topic-document-preview';
+    stage.appendChild(preview);
+    if (/\.pdf$/i.test(file.name)) {
+      const frame = document.createElement('iframe');
+      frame.title = file.name;
+      frame.src = topicAssetUrl(file.path);
+      preview.appendChild(frame);
+      return;
+    }
+    preview.textContent = 'Loading resource?';
+    try {
+      const response = await fetch(topicAssetUrl(file.path));
+      if (!response.ok) throw new Error('Unable to load this resource. Please try again.');
+      const text = await response.text();
+      if (request !== topicPreviewRequest) return;
+      preview.replaceChildren();
+      if (/\.csv$/i.test(file.name)) {
+        const table = document.createElement('table');
+        table.setAttribute('aria-label', file.name);
+        parseTopicCsv(text).forEach((row, index) => {
+          const tr = document.createElement('tr');
+          row.forEach(value => {
+            const cell = document.createElement(index === 0 ? 'th' : 'td');
+            if (index === 0) cell.scope = 'col';
+            cell.textContent = value;
+            tr.appendChild(cell);
+          });
+          table.appendChild(tr);
+        });
+        preview.appendChild(table);
+      } else {
+        const pre = document.createElement('pre');
+        pre.textContent = text;
+        preview.appendChild(pre);
+      }
+    } catch (error) {
+      if (request === topicPreviewRequest) preview.textContent = error.message;
+    }
+    return;
+  }
   topicPreviewImage.alt = topicLabel(file.name);
   topicPreviewImage.src = topicAssetUrl(file.path);
   topicPreview.hidden = false;
@@ -718,7 +842,7 @@ function renderTopicTree(root, rootPath) {
     group.appendChild(summary);
     const children = document.createElement('div');
     children.className = 'topic-tree-children';
-    orderedTopicItems(folder.files).filter(isTopicImage).forEach((file, index) => {
+    orderedTopicItems(folder.files).filter(isTopicPreviewable).forEach((file, index) => {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'topic-file-button';
@@ -747,7 +871,7 @@ function renderTopicTree(root, rootPath) {
   }
   topicFileList.appendChild(branch(root, rootPath, '1'));
   const selected = [...topicFileList.querySelectorAll('[data-image-path]')]
-    .find((button) => topicAssetUrl(button.dataset.imagePath) === topicPreviewImage.getAttribute('src'));
+    .find((button) => button.dataset.imagePath === topicPreview.dataset.filePath);
   if (selected) {
     selected.classList.add('active');
     selected.setAttribute('aria-pressed', 'true');
@@ -769,6 +893,7 @@ function topicLabel(value) {
 }
 
 function topicAssetUrl(path) {
+  if (path.startsWith('data:image/svg+xml;')) return path;
   return path.split('/').map((segment) => encodeURIComponent(segment)).join('/');
 }
 
@@ -793,7 +918,7 @@ function setTopicMenuActive(topicName) {
 function renderTopicContents(folder, path) {
   clearCanvas();
   currentTopicPath = path;
-  activeTopicImages = orderedTopicItems(folder.files).filter(isTopicImage);
+  activeTopicImages = orderedTopicItems(folder.files).filter(isTopicPreviewable);
   document.querySelector('#library-welcome').hidden = true;
   librarySidebarToggle.hidden = false;
   if (window.matchMedia('(max-width: 540px)').matches) {
@@ -827,7 +952,7 @@ function renderTopicContents(folder, path) {
   });
 
   orderedTopicItems(folder.files).forEach((file) => {
-    if (!isTopicImage(file)) {
+    if (!isTopicPreviewable(file)) {
       const resource = document.createElement('a');
       resource.className = 'topic-download-link';
       resource.href = topicAssetUrl(file.path);
@@ -902,4 +1027,25 @@ topicsBack.addEventListener('click', () => {
   renderTopicContents(findTopicFolder(parentPath), parentPath);
 });
 
+const menuScrollTrack = document.querySelector('#menu-scroll-track');
+const menuScrollLeft = document.querySelector('#menu-scroll-left');
+const menuScrollRight = document.querySelector('#menu-scroll-right');
+function updateMenuArrows() {
+  const maximum = menuScrollTrack.scrollWidth - menuScrollTrack.clientWidth;
+  menuScrollLeft.hidden = menuScrollRight.hidden = maximum <= 1;
+  menuScrollLeft.disabled = menuScrollTrack.scrollLeft <= 1;
+  menuScrollRight.disabled = menuScrollTrack.scrollLeft >= maximum - 1;
+}
+function slideTopicMenu(direction) {
+  menuScrollTrack.scrollBy({ left: direction * Math.max(120, menuScrollTrack.clientWidth * .75), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+}
+menuScrollLeft.addEventListener('click', () => slideTopicMenu(-1));
+menuScrollRight.addEventListener('click', () => slideTopicMenu(1));
+menuScrollTrack.addEventListener('scroll', updateMenuArrows, { passive: true });
+menuScrollTrack.addEventListener('focusin', event => {
+  if (event.target.matches('.menu-button')) event.target.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+});
+new ResizeObserver(updateMenuArrows).observe(menuScrollTrack);
+new MutationObserver(updateMenuArrows).observe(topicMenu, { childList: true });
+document.fonts.ready.then(updateMenuArrows);
 loadTopicManifest();

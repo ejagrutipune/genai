@@ -7,4 +7,5 @@
 
 
 
-    topic manifest to reflect added and removed folders and files
+   update topic manifest to reflect added and 
+   removed folders and files
