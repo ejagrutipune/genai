@@ -1,0 +1,33 @@
+Business Context
+
+A wine distribution company wants to estimate wine demand across U.S. states. Historical data is available for state population and annual wine consumption.
+
+The company believes that states with larger populations consume more wine and wants to build a predictive model that can estimate wine consumption for a state based on its population.
+
+Dataset Description & Variable Description
+State Postal Code -> State abbreviation
+Population (1000's) -> State population in thousands
+Wine Consumption  -> Annual wine consumption
+Wine Producer 1 = major wine-producing state, 0 = non-producing state
+
+Expectations:
+1. Evaluate a Model
+2. Residual Analysis
+3. Predict for (8000 , 15000)
+4. Construct a 95% prediction interval for one of the predictions.
+5. Business Insights -
+How much wine consumption variation is explained by population?
+Is population alone sufficient for accurate prediction?
+What additional variables might improve the model?
+6. Is Wine Producer statistically significant?
+7. Interpret the coefficient of Wine Producer.
+
+Submit following Data
+Data exploration report
+Scatter plot
+Correlation analysis
+Regression equation
+R² and RMSE
+Residual plots
+Predictions
+Business recommendations

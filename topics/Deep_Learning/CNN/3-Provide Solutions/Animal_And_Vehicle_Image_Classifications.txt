@@ -1,0 +1,89 @@
+ANIMAL AND VEHICLE IMAGE CLASSIFICATION USING DEEP LEARNING
+
+Scenario
+An educational photo application needs to organize images into categories
+such as cats, birds, airplanes, and ships. As a student data scientist,
+develop a model that predicts the category of an unseen image. Use CIFAR-10
+to build and evaluate a classroom prototype.
+
+Objective
+Train a convolutional neural network (CNN) to classify color images into
+ten categories. Explain how the model learns visual features and investigate
+its mistakes. This exercise introduces RGB images and varied backgrounds.
+
+Dataset
+Use CIFAR-10. It contains 60,000 color images of size 32 x 32 pixels:
+50,000 training images and 10,000 test images. Each image has three color
+channels (red, green, and blue) and one class label. There are 6,000 images
+per class across the complete dataset.
+
+Class labels
+0 - Airplane
+1 - Automobile
+2 - Bird
+3 - Cat
+4 - Deer
+5 - Dog
+6 - Frog
+7 - Horse
+8 - Ship
+9 - Truck
+
+Dataset source:
+https://cave.cs.toronto.edu/kriz/cifar.html
+
+Student tasks
+1. Load the dataset and inspect image shapes, label shapes, pixel ranges,
+   and class counts. Display at least one labeled example per category.
+2. Explain what an image shape of (32, 32, 3) represents. Visualize the
+   red, green, and blue channels of one image separately.
+3. Split the supplied training data into training and validation subsets
+   while preserving class proportions. Set a random seed and leave the
+   supplied test set untouched until final evaluation.
+4. Normalize pixel values. Prepare labels and image dimensions so that
+   they are compatible with your model and chosen loss function.
+5. Build a CNN from scratch using at least two convolutional layers,
+   pooling, and an output suitable for ten mutually exclusive categories.
+   Explain your choices of filters, activation functions, and output layer.
+6. Choose an optimizer, loss function, batch size, and number of epochs.
+   Train the model and plot training and validation accuracy and loss.
+7. Compare two configurations by changing one setting, such as the number
+   of filters or dropout. Select the final model using validation results
+   only. Record the settings, results, and observed training time.
+8. Evaluate the selected model on the test set. Report accuracy, per-class
+   precision, recall, F1-score, and a labeled confusion matrix.
+9. Display at least ten test images with actual labels, predicted labels,
+   and highest model scores. Inspect at least five incorrect predictions
+   if available, and discuss possible reasons for those errors.
+10. Allow a user to select a test-image index and display the predicted
+    category together with scores for all ten categories.
+
+Questions to answer
+- How many pixel-channel values are present in one image?
+- What does a convolutional filter learn, and why is pooling useful?
+- Why can background, lighting, and object position affect predictions?
+- Which two categories does your model confuse most frequently?
+- What would you conclude if training accuracy improved while validation
+  accuracy stopped improving?
+- Why is a high model score not proof that a prediction is correct?
+- What happens if the input shows an object outside these ten categories?
+- How does classifying an entire image differ from locating objects in it?
+
+Expected submission
+A Jupyter notebook with your implementation, executed outputs, sample
+images, training plots, configuration comparison, final evaluation, and
+answers to the questions. Report measured results rather than assuming an
+accuracy target. Explain limitations and propose one improvement.
+
+Optional challenge
+Compare training with and without suitable image augmentation. Apply random
+transformations only during training and keep validation and test images
+unchanged apart from required preprocessing. Explain which transformations
+preserve the category and compare validation performance.
+
+Practical guidance
+Color-image training may take longer than the digit exercise. If resources
+are limited, use a reproducible, stratified subset of the training data and
+clearly report its size. Keep the same validation set for model comparisons.
+The task assigns one category per image; it does not draw bounding boxes
+or identify every object in a scene.

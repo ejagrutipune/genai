@@ -1,0 +1,16 @@
+TELECOM PLAN RECOMMENDATION — K-NEAREST NEIGHBORS CASE STUDY
+
+A telecom company has usage and service records for 2,400 customers. The objective is to recommend one of three plan categories—Basic, Standard, or Premium—by finding customers with similar behavior.
+
+Tasks
+1. Inspect and validate the data.
+2. Separate the identifier, predictors, and multiclass target.
+3. Split the data using stratification and without leakage.
+4. Standardize numeric variables and one-hot encode categorical variables.
+5. Explain Euclidean distance, nearest neighbors, voting, distance weighting, and the role of K.
+6. Select K and other settings using training-only cross-validation.
+7. Evaluate accuracy, macro precision, macro recall, macro F1, confusion matrix, and multiclass ROC-AUC.
+8. Explain an individual prediction using its nearest training customers.
+9. Export test predictions and score new customers.
+
+Important: Customer_ID is an identifier, not a predictor. This synthetic educational recommendation must not be used as a substitute for customer choice, transparent pricing, suitability checks, or human oversight.

@@ -1,0 +1,79 @@
+FASHION PRODUCT IMAGE CLASSIFICATION USING DEEP LEARNING
+
+Scenario
+An online fashion store wants to automatically assign a category to a product
+based on its image. As a student data scientist, build a neural network that
+learns visual patterns from labeled images and predicts the category of an
+unseen item. Use Fashion-MNIST as a classroom dataset for this task.
+
+Objective
+Develop and evaluate a multiclass image classifier that assigns each image
+to one of ten fashion categories. Explain how image pixels become inputs to
+a neural network and how its outputs become a predicted category.
+
+Dataset
+Use Fashion-MNIST, available through TensorFlow/Keras. It contains 60,000
+training images and 10,000 test images. Each image is a 28 x 28 grayscale
+image with pixel values from 0 to 255 and one integer class label.
+
+Class labels
+0 - T-shirt/top
+1 - Trouser
+2 - Pullover
+3 - Dress
+4 - Coat
+5 - Sandal
+6 - Shirt
+7 - Sneaker
+8 - Bag
+9 - Ankle boot
+
+Dataset reference:
+https://www.tensorflow.org/api_docs/python/tf/keras/datasets/fashion_mnist/load_data
+
+Student tasks
+1. Load the dataset. Report image and label shapes, pixel ranges, and the
+   number of examples in each class. Display labeled sample images.
+2. Reserve a validation subset from the supplied training set. Keep the
+   supplied test set separate for final evaluation. Set a random seed.
+3. Normalize pixel values and prepare the image shape required by your model.
+   Explain why preprocessing is needed.
+4. Build a neural network from scratch with an input layer, at least two
+   hidden layers, and an output suitable for ten mutually exclusive classes.
+   Start with a fully connected network; choose and justify layer sizes
+   and activation functions.
+5. Choose an optimizer and a classification loss compatible with your label
+   representation. Explain the roles of epochs, batch size, and learning rate.
+6. Train the model and plot training and validation accuracy and loss.
+   Interpret whether the plots suggest underfitting or overfitting.
+7. Compare at least two model configurations by changing one setting, such
+   as hidden-layer size or dropout. Select the final configuration using
+   validation results only, and record what changed.
+8. Evaluate the selected model on the test set. Report accuracy, per-class
+   precision, recall, F1-score, and a labeled confusion matrix.
+9. Display at least ten test images with their actual category, predicted
+   category, and highest model score. Include incorrect predictions when
+   available and discuss which categories the model confuses.
+10. Allow a user to select a test-image index and obtain its predicted class
+    name and scores for all ten categories.
+
+Questions to answer
+- How many input values does one flattened image contain?
+- Why does this task require ten output values?
+- How does the model learn differently during training and evaluation?
+- Why must test images not be used to choose model settings?
+- Which pair of categories is most frequently confused in your results?
+- Does a high model score always mean the prediction is correct?
+- Why might a model trained on this dataset perform poorly on a color photo
+  taken with a phone?
+
+Expected submission
+A Jupyter notebook containing your implementation, executed outputs,
+training plots, model comparison, final evaluation, sample predictions,
+and short answers to the questions. Report actual results; there is no
+required accuracy threshold. Clear reasoning and correct evaluation matter.
+
+Optional challenge
+Build a convolutional neural network (CNN) and compare its validation
+performance with the fully connected model. Explain how convolution uses
+the spatial arrangement of image pixels.

@@ -1,0 +1,13 @@
+Determine a linear regression model equation to represent this data.
+
+               b.)          Graph the new equation.
+
+               c.)           Decide whether the new equation is a "good fit" to represent this data.
+
+               d.)          Interpolate data:  If a market falls around 15 %, based upon this study, what would be the expected Option Premium?)           
+
+                e.)     Interpolate data:  If a the Option Premium is around 720, based upon this study, how many % market falls expected?
+
+               f.)           Extrapolate data:  If a market falls around 95% , what would be the expected Option Premium?  Discuss this answer.          
+
+                Any answers in relation to this problem are to be rounded to the nearest tenth.

@@ -197,6 +197,29 @@
               ]
             },
             {
+              "name": "3-Provide Solutions",
+              "path": "topics/Deep_Learning/CNN/3-Provide Solutions",
+              "folders": [],
+              "files": [
+                {
+                  "name": "Animal_And_Vehicle_Image_Classifications.txt",
+                  "path": "topics/Deep_Learning/CNN/3-Provide Solutions/Animal_And_Vehicle_Image_Classifications.txt"
+                },
+                {
+                  "name": "digits_recognition_neural_network.ipynb",
+                  "path": "topics/Deep_Learning/CNN/3-Provide Solutions/digits_recognition_neural_network.ipynb"
+                },
+                {
+                  "name": "Fashion_Product_Image_Classifications.txt",
+                  "path": "topics/Deep_Learning/CNN/3-Provide Solutions/Fashion_Product_Image_Classifications.txt"
+                },
+                {
+                  "name": "Handwritten_Digit_Image_Classification.txt",
+                  "path": "topics/Deep_Learning/CNN/3-Provide Solutions/Handwritten_Digit_Image_Classification.txt"
+                }
+              ]
+            },
+            {
               "name": "4_UNet_Architecture",
               "path": "topics/Deep_Learning/CNN/4_UNet_Architecture",
               "folders": [],
@@ -662,12 +685,12 @@
                   "folders": [],
                   "files": [
                     {
-                      "name": "KNN-Task1.jpg",
-                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/3_ProvideSolutions/KNN-Task1.jpg"
+                      "name": "problem_statement.txt",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/3_ProvideSolutions/problem_statement.txt"
                     },
                     {
-                      "name": "KNN-Task2.jpg",
-                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/3_ProvideSolutions/KNN-Task2.jpg"
+                      "name": "telecom_plan_recommendation.csv",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/KNN/3_ProvideSolutions/telecom_plan_recommendation.csv"
                     }
                   ]
                 }
@@ -1127,7 +1150,38 @@
                 {
                   "name": "4_Task",
                   "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task",
-                  "folders": [],
+                  "folders": [
+                    {
+                      "name": "CaseStudy1",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task/CaseStudy1",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "CaseStudy1.txt",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task/CaseStudy1/CaseStudy1.txt"
+                        },
+                        {
+                          "name": "State_Wine_Consumptions_and_Population (4).csv",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task/CaseStudy1/State_Wine_Consumptions_and_Population (4).csv"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CaseStudy2",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task/CaseStudy2",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "MarketFallVsOptionPremium.csv",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task/CaseStudy2/MarketFallVsOptionPremium.csv"
+                        },
+                        {
+                          "name": "OptionPremium.txt",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task/CaseStudy2/OptionPremium.txt"
+                        }
+                      ]
+                    }
+                  ],
                   "files": []
                 }
               ],
@@ -1140,6 +1194,54 @@
           "name": "Unsupervised Machine Learning",
           "path": "topics/Machine Learning/Unsupervised Machine Learning",
           "folders": [
+            {
+              "name": "2_Decision_Tree",
+              "path": "topics/Machine Learning/Unsupervised Machine Learning/2_Decision_Tree",
+              "folders": [
+                {
+                  "name": "1_Prerequisite",
+                  "path": "topics/Machine Learning/Unsupervised Machine Learning/2_Decision_Tree/1_Prerequisite",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "Gini_Impurity-Part1.jpg",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/2_Decision_Tree/1_Prerequisite/Gini_Impurity-Part1.jpg"
+                    },
+                    {
+                      "name": "Gini_Impurity-Part2.jpg",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/2_Decision_Tree/1_Prerequisite/Gini_Impurity-Part2.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "2_Understanding",
+                  "path": "topics/Machine Learning/Unsupervised Machine Learning/2_Decision_Tree/2_Understanding",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "DecisionTree-Classifier.jpg",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/2_Decision_Tree/2_Understanding/DecisionTree-Classifier.jpg"
+                    },
+                    {
+                      "name": "DecisionTree-Regressor.jpg",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/2_Decision_Tree/2_Understanding/DecisionTree-Regressor.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "3_ProvideSolutions",
+                  "path": "topics/Machine Learning/Unsupervised Machine Learning/2_Decision_Tree/3_ProvideSolutions",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "DecisionTree_Task.jpg",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/2_Decision_Tree/3_ProvideSolutions/DecisionTree_Task.jpg"
+                    }
+                  ]
+                }
+              ],
+              "files": []
+            },
             {
               "name": "About",
               "path": "topics/Machine Learning/Unsupervised Machine Learning/About",
