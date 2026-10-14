@@ -197,25 +197,25 @@
               ]
             },
             {
-              "name": "3-Provide Solutions",
-              "path": "topics/Deep_Learning/CNN/3-Provide Solutions",
+              "name": "3_Provide Solutions",
+              "path": "topics/Deep_Learning/CNN/3_Provide Solutions",
               "folders": [],
               "files": [
                 {
                   "name": "Animal_And_Vehicle_Image_Classifications.txt",
-                  "path": "topics/Deep_Learning/CNN/3-Provide Solutions/Animal_And_Vehicle_Image_Classifications.txt"
+                  "path": "topics/Deep_Learning/CNN/3_Provide Solutions/Animal_And_Vehicle_Image_Classifications.txt"
                 },
                 {
                   "name": "digits_recognition_neural_network.ipynb",
-                  "path": "topics/Deep_Learning/CNN/3-Provide Solutions/digits_recognition_neural_network.ipynb"
+                  "path": "topics/Deep_Learning/CNN/3_Provide Solutions/digits_recognition_neural_network.ipynb"
                 },
                 {
                   "name": "Fashion_Product_Image_Classifications.txt",
-                  "path": "topics/Deep_Learning/CNN/3-Provide Solutions/Fashion_Product_Image_Classifications.txt"
+                  "path": "topics/Deep_Learning/CNN/3_Provide Solutions/Fashion_Product_Image_Classifications.txt"
                 },
                 {
                   "name": "Handwritten_Digit_Image_Classification.txt",
-                  "path": "topics/Deep_Learning/CNN/3-Provide Solutions/Handwritten_Digit_Image_Classification.txt"
+                  "path": "topics/Deep_Learning/CNN/3_Provide Solutions/Handwritten_Digit_Image_Classification.txt"
                 }
               ]
             },
@@ -956,6 +956,10 @@
                         {
                           "name": "solved_mlr_gradient_descent_44_steps.ipynb",
                           "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/solved_mlr_gradient_descent_44_steps.ipynb"
+                        },
+                        {
+                          "name": "solved_mlr_revenue_80_20.ipynb",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/MLR/3_Understanding/Case-Study-3/solved_mlr_revenue_80_20.ipynb"
                         }
                       ]
                     },
@@ -1178,6 +1182,17 @@
                         {
                           "name": "OptionPremium.txt",
                           "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task/CaseStudy2/OptionPremium.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CaseStudy3",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task/CaseStudy3",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "problem_statement.txt",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/SLR/4_Task/CaseStudy3/problem_statement.txt"
                         }
                       ]
                     }

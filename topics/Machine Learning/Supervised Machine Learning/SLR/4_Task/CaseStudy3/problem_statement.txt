@@ -1,0 +1,86 @@
+BUILDING AUTOMATION SYSTEMS - HEATING LOAD ESTIMATION
+SIMPLE LINEAR REGRESSION EXERCISE
+
+Scenario
+A BAS engineering team wants to understand whether building compactness
+can provide a basic estimate of heating load during early planning.
+Develop a straight-line baseline using an existing public building-energy
+dataset, and assess how much variation this single input can explain.
+
+Objective
+Use exactly one predictor to estimate one continuous target:
+
+    Predicted heating load = intercept + slope x relative compactness
+
+Predictor: X1 - Relative Compactness.
+Target: Y1 - Heating Load.
+Do not include X2-X8 or Y2 as predictors in this exercise.
+
+Dataset and download instructions
+Dataset: Energy Efficiency, UCI Machine Learning Repository.
+Authors: Athanasios Tsanas and Angeliki Xifara (2012).
+Dataset page and download button:
+https://archive.ics.uci.edu/dataset/242/energy+efficiency
+
+Students should open this page, click Download, extract the archive, and
+save ENB2012_data.xlsx in this exercise folder. No dataset is included.
+
+The dataset contains 768 simulated building configurations with eight
+input features and two targets. The authors used Ecotect simulations.
+These are building-design simulations, not measured BAS sensor logs.
+The exercise is relevant to building-energy analysis supporting BAS/HVAC
+planning; it does not model live equipment control or hourly demand.
+The repository's variable table does not specify heating-load units;
+report values in dataset units unless you verify units in the original paper.
+
+Student tasks
+1. Load the downloaded Excel file. Inspect the sheet, headers, data types,
+   and missing values. Exclude entirely empty spreadsheet rows or columns
+   if present, and report how many observations remain.
+2. Select X1 and Y1 and assign descriptive names. Summarize their ranges,
+   means, and standard deviations. Do not remove observations merely
+   because they have the same compactness: other building features vary.
+3. Plot relative compactness against heating load. Describe the direction,
+   spread, and any visible departures from a straight-line relationship.
+4. Split observations into 80% training and 20% test data with random seed
+   42. Explain that similar simulated configurations may appear in both
+   sets, so this evaluates held-out configurations within this dataset,
+   rather than generalization to entirely new real buildings.
+5. Fit simple linear regression on the training data using only X1.
+   Report the slope, intercept, and fitted equation.
+6. Interpret the predicted change in heating load for an increase of 0.1
+   in relative compactness. Avoid interpreting the relationship as causal.
+7. Plot the fitted line and observations with clearly labeled axes.
+8. Evaluate test MAE, RMSE, and R-squared. Compare MAE and RMSE with a
+   baseline that always predicts the training-set mean heating load.
+9. Plot training residuals against fitted values. Discuss whether a linear
+   model appears adequate and whether residual spread changes.
+10. Choose three compactness values within the training range. Produce a
+    table of their predicted heating loads and state the model's limits.
+11. Export test predictions with compactness, actual heating load,
+    predicted heating load, and residual (actual minus predicted).
+
+Questions to answer
+- Why is this a regression problem rather than classification?
+- What does relative compactness describe about a building's shape?
+- Why can two configurations with the same compactness have different loads?
+- Does a low R-squared mean the implementation is necessarily incorrect?
+- How could glazing, orientation, and building height affect this analysis?
+- Why would adding those predictors change this to multiple regression?
+- Why should this model not be interpreted as an hourly BAS demand forecast?
+- What measured data would you need to assess its usefulness in a real building?
+
+Expected submission
+A notebook with executed analysis, fitted equation, scatter and residual
+plots, evaluation metrics, prediction tables, and answers to the questions.
+No minimum R-squared is required: evaluate honestly whether one predictor
+is sufficient. Include the dataset citation in your submission.
+
+Optional challenge
+Evaluate a split that holds out entire compactness values. Compare its
+results with the random split and discuss how the evaluation question changes.
+
+Citation
+Tsanas, A. and Xifara, A. (2012). Energy Efficiency [Dataset].
+UCI Machine Learning Repository. https://doi.org/10.24432/C51307
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).

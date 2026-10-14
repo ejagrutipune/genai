@@ -994,7 +994,7 @@ function renderTopicsHome() {
 
 async function loadTopicManifest() {
   try {
-    const response = await fetch('resources/topics.json');
+    const response = await fetch('resources/topics.json', { cache: 'no-store' });
     if (!response.ok) throw new Error(`Manifest request failed: ${response.status}`);
     const manifest = await response.json();
     if (!Array.isArray(manifest.topics)) throw new Error('Invalid topic manifest');
