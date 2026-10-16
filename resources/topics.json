@@ -1395,6 +1395,66 @@
       "path": "topics/NLP",
       "folders": [
         {
+          "name": "1 One Hot Encoding",
+          "path": "topics/NLP/1 One Hot Encoding",
+          "folders": [],
+          "files": [
+            {
+              "name": "01_why_encoding.png",
+              "path": "topics/NLP/1 One Hot Encoding/01_why_encoding.png"
+            },
+            {
+              "name": "02_what_is_one_hot_encoding.png",
+              "path": "topics/NLP/1 One Hot Encoding/02_what_is_one_hot_encoding.png"
+            },
+            {
+              "name": "03_where_and_when.png",
+              "path": "topics/NLP/1 One Hot Encoding/03_where_and_when.png"
+            },
+            {
+              "name": "04_python_example.png",
+              "path": "topics/NLP/1 One Hot Encoding/04_python_example.png"
+            },
+            {
+              "name": "05_regression_and_train_test.png",
+              "path": "topics/NLP/1 One Hot Encoding/05_regression_and_train_test.png"
+            },
+            {
+              "name": "one_hot_encoding_for_beginners.ipynb",
+              "path": "topics/NLP/1 One Hot Encoding/one_hot_encoding_for_beginners.ipynb"
+            }
+          ]
+        },
+        {
+          "name": "2 Bag-of-Words",
+          "path": "topics/NLP/2 Bag-of-Words",
+          "folders": [],
+          "files": [
+            {
+              "name": "01-basics.png",
+              "path": "topics/NLP/2 Bag-of-Words/01-basics.png"
+            },
+            {
+              "name": "02-one-hot-connection.png",
+              "path": "topics/NLP/2 Bag-of-Words/02-one-hot-connection.png"
+            },
+            {
+              "name": "03-ml-workflow.png",
+              "path": "topics/NLP/2 Bag-of-Words/03-ml-workflow.png"
+            },
+            {
+              "name": "bag_of_words_simple.ipynb",
+              "path": "topics/NLP/2 Bag-of-Words/bag_of_words_simple.ipynb"
+            }
+          ]
+        },
+        {
+          "name": "Encoding & Embedding",
+          "path": "topics/NLP/Encoding & Embedding",
+          "folders": [],
+          "files": []
+        },
+        {
           "name": "TRANSFORMER",
           "path": "topics/NLP/TRANSFORMER",
           "folders": [
@@ -1501,14 +1561,6 @@
         {
           "name": "LossFunction.jpg",
           "path": "topics/Others/LossFunction.jpg"
-        },
-        {
-          "name": "ReinforcementLearning.jpg",
-          "path": "topics/Others/ReinforcementLearning.jpg"
-        },
-        {
-          "name": "UnSupervisedLearning.jpg",
-          "path": "topics/Others/UnSupervisedLearning.jpg"
         },
         {
           "name": "What_is_Decoder.jpg",
@@ -1760,6 +1812,10 @@
         {
           "name": "CodingViaJupyterNotebook.pdf",
           "path": "topics/Setup/CodingViaJupyterNotebook.pdf"
+        },
+        {
+          "name": "Jupyter Notebook inside VS Code.pdf",
+          "path": "topics/Setup/Jupyter Notebook inside VS Code.pdf"
         },
         {
           "name": "Python_Using_Google_Colab.pdf",

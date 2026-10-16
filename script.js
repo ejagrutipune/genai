@@ -780,10 +780,18 @@ async function showTopicImage(file, selectedButton) {
     preview.id = 'topic-document-preview';
     stage.appendChild(preview);
     if (/\.pdf$/i.test(file.name)) {
+      const openPdf = document.createElement('a');
+      openPdf.className = 'topic-download-link';
+      openPdf.href = topicAssetUrl(file.path);
+      openPdf.target = '_blank';
+      openPdf.rel = 'noopener';
+      openPdf.textContent = 'Open PDF in new tab';
+      const help = document.createElement('p');
+      help.textContent = 'If the preview is blank, open the PDF in a new tab.';
       const frame = document.createElement('iframe');
       frame.title = file.name;
       frame.src = topicAssetUrl(file.path);
-      preview.appendChild(frame);
+      preview.append(openPdf, help, frame);
       return;
     }
     preview.textContent = 'Loading resource?';
