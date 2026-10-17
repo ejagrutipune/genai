@@ -1449,6 +1449,33 @@
           ]
         },
         {
+          "name": "3 TF-IDF",
+          "path": "topics/NLP/3 TF-IDF",
+          "folders": [],
+          "files": [
+            {
+              "name": "01-basics.png",
+              "path": "topics/NLP/3 TF-IDF/01-basics.png"
+            },
+            {
+              "name": "02-calculations.png",
+              "path": "topics/NLP/3 TF-IDF/02-calculations.png"
+            },
+            {
+              "name": "03-encoding-connection.png",
+              "path": "topics/NLP/3 TF-IDF/03-encoding-connection.png"
+            },
+            {
+              "name": "04-uses-and-limitations.png",
+              "path": "topics/NLP/3 TF-IDF/04-uses-and-limitations.png"
+            },
+            {
+              "name": "tfidf_simple_example.ipynb",
+              "path": "topics/NLP/3 TF-IDF/tfidf_simple_example.ipynb"
+            }
+          ]
+        },
+        {
           "name": "Encoding & Embedding",
           "path": "topics/NLP/Encoding & Embedding",
           "folders": [],
