@@ -1,0 +1,25 @@
+HOUSEHOLD ELECTRICITY SERVICE PLANNING — PROBLEM STATEMENT
+
+An electricity distribution company serves 900 households. Smart-meter readings and service records provide the following information for each household:
+
+• average daily electricity usage
+• percentage of usage during peak hours
+• percentage of usage at night
+• weekend-to-weekday usage ratio
+• maximum electrical demand
+• average monthly bill
+• number of power-cut complaints per year
+
+The company wants to design a small set of suitable energy-saving programs instead of offering the same program to every household. It therefore needs to discover groups of households that have similar consumption and service patterns.
+
+Your tasks
+
+1. Load and inspect household_electricity_usage.csv.
+2. Check for missing values, duplicate household IDs, and unsuitable modelling columns.
+3. Prepare the measurements so that variables recorded on large numerical scales do not dominate the analysis.
+4. Select a suitable unsupervised machine-learning method for discovering natural household groups.
+5. Use visual and quantitative evidence to justify an appropriate number of groups.
+6. Assign each household to a group and describe the typical characteristics of every group in the original units.
+7. Visualize the groups and recommend an appropriate energy-management strategy for each pattern you discover.
+
+Important: Household_ID is only an identifier. The file does not contain a predefined group or target variable.

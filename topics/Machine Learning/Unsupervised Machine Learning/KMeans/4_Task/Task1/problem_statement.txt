@@ -1,0 +1,26 @@
+E-COMMERCE INVENTORY STRATEGY — PROBLEM STATEMENT
+
+An e-commerce company manages 1,000 products. Its sales, finance, customer-service, and supplier systems provide the following annual measurements for each product:
+
+• units sold
+• average unit price
+• annual revenue
+• gross margin percentage
+• customer return rate
+• number of stock-out days
+• supplier lead time
+• average customer rating
+
+Using one inventory policy for every product has caused excess stock for some items and repeated shortages for others. Management wants to discover a small number of product groups with similar commercial and supply characteristics, then design a different inventory policy for each group.
+
+Your tasks
+
+1. Load and examine ecommerce_product_inventory.csv.
+2. Check data quality and identify columns that should not influence similarity.
+3. Examine feature distributions and handle major differences in scale or skewness.
+4. Select an appropriate unsupervised machine-learning technique for discovering natural product groups.
+5. Justify the number of groups using quantitative metrics and visual evidence.
+6. Assign every product to a group and summarize each group in the original business units.
+7. Create useful visualizations and recommend an inventory strategy for each discovered pattern.
+
+Important: Product_ID is an identifier only. No predefined product class or target variable is supplied.

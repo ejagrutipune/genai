@@ -1395,90 +1395,91 @@
       "path": "topics/NLP",
       "folders": [
         {
-          "name": "1 One Hot Encoding",
-          "path": "topics/NLP/1 One Hot Encoding",
-          "folders": [],
-          "files": [
+          "name": "Encoding",
+          "path": "topics/NLP/Encoding",
+          "folders": [
             {
-              "name": "01_why_encoding.png",
-              "path": "topics/NLP/1 One Hot Encoding/01_why_encoding.png"
+              "name": "1 One Hot Encoding",
+              "path": "topics/NLP/Encoding/1 One Hot Encoding",
+              "folders": [],
+              "files": [
+                {
+                  "name": "01_why_encoding.png",
+                  "path": "topics/NLP/Encoding/1 One Hot Encoding/01_why_encoding.png"
+                },
+                {
+                  "name": "02_what_is_one_hot_encoding.png",
+                  "path": "topics/NLP/Encoding/1 One Hot Encoding/02_what_is_one_hot_encoding.png"
+                },
+                {
+                  "name": "03_where_and_when.png",
+                  "path": "topics/NLP/Encoding/1 One Hot Encoding/03_where_and_when.png"
+                },
+                {
+                  "name": "04_python_example.png",
+                  "path": "topics/NLP/Encoding/1 One Hot Encoding/04_python_example.png"
+                },
+                {
+                  "name": "05_regression_and_train_test.png",
+                  "path": "topics/NLP/Encoding/1 One Hot Encoding/05_regression_and_train_test.png"
+                },
+                {
+                  "name": "one_hot_encoding_for_beginners.ipynb",
+                  "path": "topics/NLP/Encoding/1 One Hot Encoding/one_hot_encoding_for_beginners.ipynb"
+                }
+              ]
             },
             {
-              "name": "02_what_is_one_hot_encoding.png",
-              "path": "topics/NLP/1 One Hot Encoding/02_what_is_one_hot_encoding.png"
+              "name": "2 Bag-of-Words",
+              "path": "topics/NLP/Encoding/2 Bag-of-Words",
+              "folders": [],
+              "files": [
+                {
+                  "name": "01-basics.png",
+                  "path": "topics/NLP/Encoding/2 Bag-of-Words/01-basics.png"
+                },
+                {
+                  "name": "02-one-hot-connection.png",
+                  "path": "topics/NLP/Encoding/2 Bag-of-Words/02-one-hot-connection.png"
+                },
+                {
+                  "name": "03-ml-workflow.png",
+                  "path": "topics/NLP/Encoding/2 Bag-of-Words/03-ml-workflow.png"
+                },
+                {
+                  "name": "bag_of_words_simple.ipynb",
+                  "path": "topics/NLP/Encoding/2 Bag-of-Words/bag_of_words_simple.ipynb"
+                }
+              ]
             },
             {
-              "name": "03_where_and_when.png",
-              "path": "topics/NLP/1 One Hot Encoding/03_where_and_when.png"
-            },
-            {
-              "name": "04_python_example.png",
-              "path": "topics/NLP/1 One Hot Encoding/04_python_example.png"
-            },
-            {
-              "name": "05_regression_and_train_test.png",
-              "path": "topics/NLP/1 One Hot Encoding/05_regression_and_train_test.png"
-            },
-            {
-              "name": "one_hot_encoding_for_beginners.ipynb",
-              "path": "topics/NLP/1 One Hot Encoding/one_hot_encoding_for_beginners.ipynb"
+              "name": "3 TF-IDF",
+              "path": "topics/NLP/Encoding/3 TF-IDF",
+              "folders": [],
+              "files": [
+                {
+                  "name": "01-basics.png",
+                  "path": "topics/NLP/Encoding/3 TF-IDF/01-basics.png"
+                },
+                {
+                  "name": "02-calculations.png",
+                  "path": "topics/NLP/Encoding/3 TF-IDF/02-calculations.png"
+                },
+                {
+                  "name": "03-encoding-connection.png",
+                  "path": "topics/NLP/Encoding/3 TF-IDF/03-encoding-connection.png"
+                },
+                {
+                  "name": "04-uses-and-limitations.png",
+                  "path": "topics/NLP/Encoding/3 TF-IDF/04-uses-and-limitations.png"
+                },
+                {
+                  "name": "tfidf_simple_example.ipynb",
+                  "path": "topics/NLP/Encoding/3 TF-IDF/tfidf_simple_example.ipynb"
+                }
+              ]
             }
-          ]
-        },
-        {
-          "name": "2 Bag-of-Words",
-          "path": "topics/NLP/2 Bag-of-Words",
-          "folders": [],
-          "files": [
-            {
-              "name": "01-basics.png",
-              "path": "topics/NLP/2 Bag-of-Words/01-basics.png"
-            },
-            {
-              "name": "02-one-hot-connection.png",
-              "path": "topics/NLP/2 Bag-of-Words/02-one-hot-connection.png"
-            },
-            {
-              "name": "03-ml-workflow.png",
-              "path": "topics/NLP/2 Bag-of-Words/03-ml-workflow.png"
-            },
-            {
-              "name": "bag_of_words_simple.ipynb",
-              "path": "topics/NLP/2 Bag-of-Words/bag_of_words_simple.ipynb"
-            }
-          ]
-        },
-        {
-          "name": "3 TF-IDF",
-          "path": "topics/NLP/3 TF-IDF",
-          "folders": [],
-          "files": [
-            {
-              "name": "01-basics.png",
-              "path": "topics/NLP/3 TF-IDF/01-basics.png"
-            },
-            {
-              "name": "02-calculations.png",
-              "path": "topics/NLP/3 TF-IDF/02-calculations.png"
-            },
-            {
-              "name": "03-encoding-connection.png",
-              "path": "topics/NLP/3 TF-IDF/03-encoding-connection.png"
-            },
-            {
-              "name": "04-uses-and-limitations.png",
-              "path": "topics/NLP/3 TF-IDF/04-uses-and-limitations.png"
-            },
-            {
-              "name": "tfidf_simple_example.ipynb",
-              "path": "topics/NLP/3 TF-IDF/tfidf_simple_example.ipynb"
-            }
-          ]
-        },
-        {
-          "name": "Encoding & Embedding",
-          "path": "topics/NLP/Encoding & Embedding",
-          "folders": [],
+          ],
           "files": []
         },
         {
