@@ -614,6 +614,33 @@
                   "path": "topics/Machine Learning/Reinforcement Machine Learning/About/What_Is_Rienforcement_Learning.jpg"
                 }
               ]
+            },
+            {
+              "name": "Understand",
+              "path": "topics/Machine Learning/Reinforcement Machine Learning/Understand",
+              "folders": [],
+              "files": [
+                {
+                  "name": "1_RL_state_actions_reward.png",
+                  "path": "topics/Machine Learning/Reinforcement Machine Learning/Understand/1_RL_state_actions_reward.png"
+                },
+                {
+                  "name": "2_RL_simulator_learning.png",
+                  "path": "topics/Machine Learning/Reinforcement Machine Learning/Understand/2_RL_simulator_learning.png"
+                },
+                {
+                  "name": "3_RL_evaluation_safety.png",
+                  "path": "topics/Machine Learning/Reinforcement Machine Learning/Understand/3_RL_evaluation_safety.png"
+                },
+                {
+                  "name": "4_RL_production_reality_check.png",
+                  "path": "topics/Machine Learning/Reinforcement Machine Learning/Understand/4_RL_production_reality_check.png"
+                },
+                {
+                  "name": "RL_Using_QTable.ejagruti",
+                  "path": "topics/Machine Learning/Reinforcement Machine Learning/Understand/RL_Using_QTable.ejagruti"
+                }
+              ]
             }
           ],
           "files": []
