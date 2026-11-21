@@ -1228,6 +1228,109 @@
                 }
               ],
               "files": []
+            },
+            {
+              "name": "Support_Vector_Machine",
+              "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine",
+              "folders": [
+                {
+                  "name": "1_Prerequisite",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/1_Prerequisite",
+                  "folders": [],
+                  "files": [
+                    {
+                      "name": "EuclideanDistance.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/1_Prerequisite/EuclideanDistance.jpg"
+                    },
+                    {
+                      "name": "Vectors.jpg",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/1_Prerequisite/Vectors.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "2_Understanding",
+                  "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding",
+                  "folders": [
+                    {
+                      "name": "1_CaseStudy1",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/1_CaseStudy1",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "1_Why_SVM.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/1_CaseStudy1/1_Why_SVM.jpg"
+                        },
+                        {
+                          "name": "2_Problem_Statements.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/1_CaseStudy1/2_Problem_Statements.jpg"
+                        },
+                        {
+                          "name": "3_Identify_Support_Vectors.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/1_CaseStudy1/3_Identify_Support_Vectors.jpg"
+                        },
+                        {
+                          "name": "4_Calculate_Weights_And_Bias.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/1_CaseStudy1/4_Calculate_Weights_And_Bias.jpg"
+                        },
+                        {
+                          "name": "5_Evaluate_Model_Performance.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/1_CaseStudy1/5_Evaluate_Model_Performance.jpg"
+                        },
+                        {
+                          "name": "6_HardMargin_Vs_SoftMargin.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/1_CaseStudy1/6_HardMargin_Vs_SoftMargin.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2_CaseStudy2",
+                      "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "1_Slope_Vs_Straight_Line.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2/1_Slope_Vs_Straight_Line.jpg"
+                        },
+                        {
+                          "name": "2_Support_Vector_Direction.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2/2_Support_Vector_Direction.png"
+                        },
+                        {
+                          "name": "3_DotProductOfWeights.jpg",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2/3_DotProductOfWeights.jpg"
+                        },
+                        {
+                          "name": "4_Calculate_Weights_And_Bias.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2/4_Calculate_Weights_And_Bias.png"
+                        },
+                        {
+                          "name": "5_Searching_For_Closest_Vectors.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2/5_Searching_For_Closest_Vectors.png"
+                        },
+                        {
+                          "name": "6_Support_Vector_Classification.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2/6_Support_Vector_Classification.png"
+                        },
+                        {
+                          "name": "7_SoftMargin_Vs_HardMargin.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2/7_SoftMargin_Vs_HardMargin.png"
+                        },
+                        {
+                          "name": "8-SVM_Classification_Using_SoftMargin.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2/8-SVM_Classification_Using_SoftMargin.png"
+                        },
+                        {
+                          "name": "9_SVM_Classification_Calculations.png",
+                          "path": "topics/Machine Learning/Supervised Machine Learning/Support_Vector_Machine/2_Understanding/2_CaseStudy2/9_SVM_Classification_Calculations.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "files": []
+                }
+              ],
+              "files": []
             }
           ],
           "files": []
@@ -1405,7 +1508,38 @@
                 {
                   "name": "4_Task",
                   "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/4_Task",
-                  "folders": [],
+                  "folders": [
+                    {
+                      "name": "Task1",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/4_Task/Task1",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "ecommerce_product_inventory.csv",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/4_Task/Task1/ecommerce_product_inventory.csv"
+                        },
+                        {
+                          "name": "problem_statement.txt",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/4_Task/Task1/problem_statement.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Task2",
+                      "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/4_Task/Task2",
+                      "folders": [],
+                      "files": [
+                        {
+                          "name": "household_electricity_usage.csv",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/4_Task/Task2/household_electricity_usage.csv"
+                        },
+                        {
+                          "name": "problem_statement.txt",
+                          "path": "topics/Machine Learning/Unsupervised Machine Learning/KMeans/4_Task/Task2/problem_statement.txt"
+                        }
+                      ]
+                    }
+                  ],
                   "files": []
                 }
               ],
